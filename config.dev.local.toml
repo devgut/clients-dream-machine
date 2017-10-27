@@ -1,0 +1,5 @@
+baseURL = "localhost"
+languageCode = "en-us"
+title = "DreamMachine"
+theme = "dream-machine"
+enableRobotsTXT = true
