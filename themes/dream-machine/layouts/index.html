@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
+  {{partial "vendor/head" . }}
   {{partial "vendor/head-includes" . }}
 </head>
 
 <body>
+  {{partial "modules/header/markup" . }}
   {{partial "pages/main" . }}
   {{partial "vendor/footer-includes" . }}
 </body>
