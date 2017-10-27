@@ -148,10 +148,6 @@ module.exports = {
       from: 'images-theme/',
       to: 'images-theme/'
     }]),
-    new CopyWebpackPlugin([{
-      from: 'fonts/',
-      to: 'fonts/'
-    }]),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i
     })
