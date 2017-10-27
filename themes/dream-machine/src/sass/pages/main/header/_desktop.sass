@@ -1,0 +1,38 @@
+.mainPageHeader
+  background: $grayBackground
+  max-height: 893px
+  height: 100%
+  &__innerShifted
+    position: relative
+    right: -80px
+    max-height: 996px
+    height: 100vh
+    overflow-y: hidden
+    background: $grayBackground
+    padding-left: 0px
+    padding-right: 0px
+  &__heading
+    display: flex
+    flex-flow: row wrap
+    align-content: center
+    width: 100%
+    padding-left: 147px
+    padding-right: 147px
+    &__title
+      width: 100%
+      +font($headingFont, 80px, 118px, $white, normal, none, uppercase)
+    &__description
+      max-width: 840px
+      +font($primaryFont, 27px, 31px, $white, normal, none, none)
+      opacity: 0.6
+  &__slide
+    position: relative
+    &__content
+      position: absolute
+      left: 0px
+      top: 0px
+      width: 100%
+      height: 100%
+      width: 100%
+      z-index: 2
+      display: flex
