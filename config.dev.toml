@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://dream-machine.netlify.com"
 languageCode = "en-us"
 title = "DreamMachine"
 theme = "dream-machine"
