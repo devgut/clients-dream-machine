@@ -1,0 +1,8 @@
+public
+node_modules
+static/css
+static/js
+static/images-theme
+themes/dream-machine/static
+.DS_Store
+package-lock.json
