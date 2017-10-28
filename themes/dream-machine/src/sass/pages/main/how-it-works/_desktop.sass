@@ -1,6 +1,6 @@
 .howItWorks
   margin-top: 360px
-  background: $grayBackground
+  background: $gray-2
   position: relative
   &__header
     max-width: 768px
@@ -19,22 +19,74 @@
       opacity: 0.6
 .howItWorksTabs
   &__tabs
-    display: flex
+    position: relative
   &__tabsNavigation
-    width: 320px
+    max-width: 650px
+    width: 100%
+    position: absolute
+    height: 100%
+    left: 85px
+    z-index: 2
+    ul
+      display: flex
+      height: 100%
+      flex-flow: row wrap
+      align-content: center
+      li
+        width: 100%
+    &__item
+      border-left: 5px solid transparent
+      margin: 10px 0px
+      padding: 10px 25px
+      opacity: 0.3
+      &.active
+        border-left: 5px solid $blue-1
+        opacity: 0.8
+        .howItWorksTabs__tabsNavigation__item__title
+          opacity: 1
+      &__title
+        +font($headingFont, 32px, 38px, $white, normal, none, uppercase)
+        margin-bottom: 10px
+      &__description
+        +font($primaryFont, 21px, 25px, $white, normal, none, none)
+        p
+          margin-bottom: 10px
+        a
+          +font($primaryFont, 21px, 25px, $white, normal, underline, none)
   &__tab
     display: none
     justify-content: space-betweens
     padding-left: 35px
     opacity: 0
     &.active
-      display: flex
       animation: showTab 500ms linear
       animation-fill-mode: forwards
+      display: flex
+      opacity: 1
       height: 470px
-      
+      flex-flow: row wrap
+    &__icon
+      width: 50%
+      overflow: hidden
+      height: 100%
+      position: relative
+      left: -85px
+      svg
+        position: relative
+        bottom: -40px
+        opacity: 1
+    &__picture
+      width: 50%
+      position: relative
+      img
+        position: absolute
+        bottom: 0px
+        right: 0px
+        max-width: 100%
 @keyframes showTab
   0%
     opacity: 0
+  50%
+    opacity: 0.8
   100%
     opacity: 1
