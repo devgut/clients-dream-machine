@@ -12,5 +12,5 @@ import slick from "slick-carousel";
       });
     }
   }
-  window.setupMainPageHeaderSlider = setupMainPageHeaderSlider();
+  window.setupMainPageHeaderSlider = setupMainPageHeaderSlider;
 }
