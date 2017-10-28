@@ -1,3 +1,18 @@
 .howItWorks
   margin-top: 360px
   background: $grayBackground
+  position: relative
+  &__header
+    max-width: 768px
+    width: 100%
+    position: relative
+    top: -130px
+    background-image: $howItWorks
+    box-sizing: border-box
+    padding: 35px 40px 40px
+    &__title
+      +font($headingFont, 60px, 70px, $white, normal, none, uppercase)
+      margin-bottom: 25px
+    &__description
+      +font($primaryFont, 24px, 29px, $white, normal, none, none)
+      opacity: 0.6
