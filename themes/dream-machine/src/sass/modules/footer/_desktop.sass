@@ -1,3 +1,41 @@
 .footer
   &__subscribe
     background-image: $subscribeGradient
+    &__container
+      position: relative
+    &__form
+      max-width: 830px
+      width: 100%
+      padding-top: 45px
+      padding-bottom: 50px
+      &__description
+        +font($primaryFont, 30px, 35px, $white, normal, none, none)
+        margin-bottom: 35px
+      &__picture
+        position: absolute
+        max-width: 480px
+        right: 0px
+        bottom: -4px
+        img
+          max-width: 100%
+.mc__signup form
+  .mc-field-group
+    width: 100%
+    max-width: 703px
+    display: flex
+    input
+      border: 0px
+    input[type=email]
+      width: 100%
+      margin-right: 20px
+      +font($primaryFont, 24px, 29px, $white, normal, none, none)
+      border-radius: 3px
+      background: rgba(255, 255, 255, 0.2)
+      padding: 15px 20px
+      &::-webkit-input-placeholder
+        +font($primaryFont, 24px, 29px, rgba(255, 255, 255, 0.5), normal, none, none)
+    input[type=submit]
+      width: 200px
+      border-radius: 5px
+      background: $purple
+      +font($primaryFont, 28px, 33px, $white, normal, none, uppercase)
