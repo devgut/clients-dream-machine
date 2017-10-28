@@ -1,0 +1,21 @@
+.benefits
+  background: url('../images-theme/benefits-section-background.jpg') no-repeat 0% 0%
+  background-size: cover
+  margin-top: 154px
+  &__blocks
+    display: flex
+    flex-flow: row wrap
+  &__block
+    width: 50%
+    box-sizing: border-box
+    padding: 100px 45px
+  &__sectionTitle
+    +font($headingFont, 60px, 70px, $white, normal, none, uppercase)
+  &__list
+    &__item
+      margin-bottom: 50px
+      &__title
+        +font($primaryFont, 24px, 29px, $blue-2, normal, none, none)
+        margin-bottom: 20px
+      &__description
+        +font($primaryFont, 20px, 29px, $white, normal, none, none)
