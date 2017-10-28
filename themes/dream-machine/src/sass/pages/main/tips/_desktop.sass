@@ -1,0 +1,24 @@
+.tips
+  margin-top: 180px
+  &__sectionTitle
+    +font($headingFont, 60px, 71px, $blue-2, normal, none, none)
+    margin-bottom: 60px
+  &__list
+    display: flex
+    flex-flow: row wrap
+    &__column
+      width: 50%
+    &__item
+      +font($primaryFont, 19px, 22px, $black-2, normal, none, none)
+      margin-bottom: 50px
+      display: flex
+      p
+        display: block
+        width: calc(100% - 38px)
+      &::before
+        content: ""
+        display: block
+        background: $blue-3
+        width: 2px
+        height: 20px
+        margin: 0px 18px 0px 0px
