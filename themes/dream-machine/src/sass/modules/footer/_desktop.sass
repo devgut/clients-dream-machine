@@ -1,4 +1,5 @@
 .footer
+  background: $gray-2
   &__subscribe
     background-image: $subscribeGradient
     &__container
@@ -39,3 +40,26 @@
       border-radius: 5px
       background: $purple
       +font($primaryFont, 28px, 33px, $white, normal, none, uppercase)
+.footer
+  &__container
+    display: flex
+    justify-content: space-between
+    padding-top: 115px
+    padding-bottom: 115px
+  &__logo,
+  &__cta
+    width: 25%
+  &__cta
+    text-align: right
+    box-sizing: border-box
+    padding-right: 30px
+  &__navigation
+    width: 50%
+    ul
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-between
+      li
+        width: calc(100% / 3)
+        a
+          +font($primaryFont, 18px, 34px, rgba(255, 255, 255, 0.5), normal, none, none)

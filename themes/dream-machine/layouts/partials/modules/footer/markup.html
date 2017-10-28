@@ -1,1 +1,37 @@
 {{partial "modules/footer/subscrine/markup"}}
+<div class="container--fluid footer">
+  <div class="container container--content footer__container">
+    <div class="footer__logo">
+      <a href="{{ .Site.Params.baseURL }}">
+        {{partial "svg/header-main-logo" . }}
+      </a>
+    </div>
+    <div class="footer__navigation">
+      <ul>
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Experiences</a>
+        </li>
+        <li>
+          <a href="">News</a>
+        </li>
+        <li>
+          <a href="">Original Dreamachine</a>
+        </li>
+        <li>
+          <a href="">Q&A</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__cta">
+      <a href="" class="mainPageHeader__heading__appStore">
+        {{partial "svg/app-store-button-sm"}}
+      </a>
+    </div>
+  </div>
+</div>
