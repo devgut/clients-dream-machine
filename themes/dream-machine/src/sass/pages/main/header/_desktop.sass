@@ -5,8 +5,6 @@
   &__innerShifted
     position: relative
     right: -80px
-    max-height: 996px
-    height: 100vh
     overflow-y: hidden
     background: $grayBackground
     padding-left: 0px
@@ -20,11 +18,17 @@
     padding-right: 147px
     &__title
       width: 100%
+      max-width: 1710px
       +font($headingFont, 80px, 118px, $white, normal, none, uppercase)
+      margin-bottom: 25px
     &__description
       max-width: 840px
       +font($primaryFont, 27px, 31px, $white, normal, none, none)
+      margin-bottom: 40px
       opacity: 0.6
+    &__cta
+      width: 100%
+      max-width: 1710px
   &__slide
     position: relative
     &__content
@@ -36,3 +40,40 @@
       width: 100%
       z-index: 2
       display: flex
+      max-height: 996px
+      align-items: center
+.mainPageHeader
+  &__excerptions
+    position: absolute
+    left: 0px
+    bottom: 0px
+    z-index: 2
+    width: 100%
+    max-width: 1510px
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-end
+    margin-left: -25px
+  &__excerption
+    max-width: 550px
+    width: 100%
+    display: flex
+    padding: 50px
+    flex-flow: row wrap
+    &__description
+      +font($primaryFont, 21px, 27px, $white, normal, none, none)
+    &__author
+      align-self: flex-end
+      text-align: right
+      width: 100%
+      +font($primaryFont, 21px, 27px, $gray-1, normal, none, none)
+      margin-top: 30px
+      display: flex
+      justify-content: flex-end
+      .bottomDash::after
+        content: ""
+        display: block
+        width: 41px
+        height: 3px
+        margin-top: 10px
+        background: $blue
