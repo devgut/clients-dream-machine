@@ -1,7 +1,12 @@
 <div class="container-fluid header header--gray">
-  <div class="container">
+  <div class="container header__navigation">
     <a href="{{ .Site.Params.baseURL }}">
       {{partial "svg/header-main-logo" . }}
     </a>
+    <div class="header__navigation__callMenu">
+      <div class="header__navigation__callMenu__button">
+        MENU <div class="header__navigation__callMenu__burger"><span></span></div>
+      </div>
+    </div>
   </div>
 </div>
