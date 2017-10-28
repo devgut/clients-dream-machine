@@ -1,1 +1,28 @@
 .features
+  margin-top: 136px
+  display: flex
+  &__leftColumn
+    width: calc(100% - 500px)
+  &__rightColumn
+    max-width: 500px
+    width: 100%
+  &__sectionTitle
+    width: 100%
+    text-align: center
+    +font($primaryFont, 60px, 71px, $blue-2, normal, none, none)
+  &__list
+    display: flex
+    flex-flow: row wrap
+    &__item
+      width: calc(100% / 3)
+      box-sizing: border-box
+      padding: 40px 34px
+      background: $gray-4
+      &--white
+        background: $white
+      &--grayLight
+        background: $gray-5
+      &__icon
+        margin-bottom: 20px
+      &__description
+        +font($primaryFont, 19px, 22px, $black-1, normal, none, none)
