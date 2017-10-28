@@ -1,0 +1,36 @@
+.sidebarMenu
+  position: fixed
+  right: 0px
+  top: 0px
+  height: 100vh
+  background: $gray-7
+  z-index: 100
+  padding: 25px 45px
+  box-sizing: border-box
+  max-width: 533px
+  width: 100%
+  &__navigation
+    text-align: right
+    margin-bottom: 75px
+  &__closeMenu
+    +font($primaryFont, 27px, 31px, $white-1, normal, none, uppercase)
+  &__navigation__list
+    ul li a
+      +font($primaryFont, 24px, 73px, $gray-6, normal, none, uppercase)
+      +transition(300ms, linear)
+      border-left: 2px solid transparent
+      padding-left: 15px
+      &:hover
+        color: $blue-3
+      &.active
+        border-left: 2px solid $blue-3
+        color: $white
+.overlayCloseMenu
+  position: fixed
+  z-index: 100
+  left: 0px
+  top: 0px
+  width: calc(100% - 533px)
+  height: 100vh
+  background: rgba(0, 0, 0, .4)
+  cursor: url("../images-theme/close-cursor.svg"), auto
