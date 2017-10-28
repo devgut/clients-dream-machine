@@ -16,6 +16,8 @@
     width: 100%
     padding-left: 147px
     padding-right: 147px
+    position: relative
+    top: -6%
     &__title
       width: 100%
       max-width: 1710px
@@ -54,9 +56,11 @@
     flex-flow: row wrap
     justify-content: flex-end
     margin-left: -25px
+    &--alignLeft
+      justify-content: flex-start
+      margin-left: 97px
   &__excerption
     max-width: 550px
-    width: 100%
     display: flex
     padding: 50px
     flex-flow: row wrap
@@ -70,6 +74,8 @@
       margin-top: 30px
       display: flex
       justify-content: flex-end
+      &--alignLeft
+        justify-content: flex-start
       .bottomDash::after
         content: ""
         display: block
