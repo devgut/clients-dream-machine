@@ -26,3 +26,20 @@
     &:nth-child(2n)
       position: relative
       top: -140px
+    &__featuredImage
+      max-height: 306px
+      overflow-y: hidden
+      img
+        width: 100%
+    &__shortDescription
+      box-sizing: border-box
+      background: $white-2
+      padding: 35px
+      position: relative
+      right: -35px
+      +font($primaryFont, 21px, 25px, $black-2, normal, none, none)
+    &__readMore
+      padding-top: 25px
+      text-align: right
+      a, a:hover, a:visited, a:active
+        +font($primaryFont, 21px, 25px, $blue-4, normal, none, none)
