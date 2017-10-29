@@ -43,3 +43,27 @@
       text-align: right
       a, a:hover, a:visited, a:active
         +font($primaryFont, 21px, 25px, $blue-4, normal, none, none)
+
+//single page styles
+.newsHeader
+  &__singleHead
+    max-height: 470px
+    text-align: right
+    &__caption
+      position: absolute
+      max-width: 600px
+      left: 190px
+      top: 0px
+      bottom: 0px
+      display: flex
+      align-items: center
+      align-content: center
+      text-align: left
+      +font($headingFont, 52px, 64px, $white, normal, none, none)
+    &__featuredImage
+      max-width: 1730px
+      display: inline-block
+      position: relative
+      img
+        width: 100%
+        margin-bottom: -5px
