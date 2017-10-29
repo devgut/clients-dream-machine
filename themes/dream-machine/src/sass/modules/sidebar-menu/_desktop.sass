@@ -7,11 +7,13 @@
   padding: 25px 45px
   box-sizing: border-box
   max-width: 533px
+  display: none
   width: 100%
   opacity: 0
   animation: hideMenu 350ms linear
   animation-fill-mode: forwards
   &.active
+    display: block
     animation: showMenu 350ms linear
     animation-fill-mode: forwards
   &__navigation
@@ -40,7 +42,9 @@
   cursor: url("../images-theme/close-cursor.svg"), auto
   animation: hideOverlay 500ms linear
   animation-fill-mode: forwards
+  display: none
   &.active
+    display: block
     left: 0px
     animation: showMenu 500ms linear
     animation-fill-mode: forwards
