@@ -12,6 +12,7 @@
       display: inline-block
       img
         width: 100%
+        margin-bottom: -5px
     &__caption
       text-align: left
       position: absolute
@@ -29,3 +30,45 @@
         width: 100%
         +font($primaryFont, 27px, 31px, $white, normal, none, none)
         opacity: 0.6
+
+.aboutPage__blockquote
+  padding-top: 220px
+  padding-bottom: 300px
+  max-width: 1380px
+  width: 100%
+  margin: 0px auto
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  &__column
+    width: 50%
+  &__description
+    +font($primaryFont, 32px, 38px, $black-2, normal, none, none)
+    max-width: 608px
+  &__details
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-end
+    &__photo
+      width: 270px
+      position: relative
+      z-index: 2
+    &__caption
+      background: $white-2
+      width: calc(100% - 270px)
+      padding: 30px 25px 35px 65px
+      position: relative
+      z-index: 1
+      left: -35px
+      bottom: -30px
+      +font($primaryFont, 22px, 26px, $black-2, normal, none, none)
+    &__name
+      margin-top: 30px
+      text-transform: uppercase
+      &::before
+        content: ""
+        width: 70px
+        height: 3px
+        display: block
+        background: $blue-3
+        margin-bottom: 6px
