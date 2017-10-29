@@ -1,0 +1,31 @@
+.aboutPage
+  &__head
+    background: $grayBackground
+  &__header
+    max-height: 468px
+    width: 100%
+    text-align: right
+    &__featuredImage
+      position: relative
+      max-width: 1710px
+      width: 100%
+      display: inline-block
+      img
+        width: 100%
+    &__caption
+      text-align: left
+      position: absolute
+      top: 0px
+      bottom: 0px
+      left: 128px
+      display: flex
+      align-content: center
+      flex-flow: row wrap
+      &__title
+        width: 100%
+        +font($headingFont, 52px, 61px, $white, normal, none, none)
+        margin-bottom: 10px
+      &__tagline
+        width: 100%
+        +font($primaryFont, 27px, 31px, $white, normal, none, none)
+        opacity: 0.6
