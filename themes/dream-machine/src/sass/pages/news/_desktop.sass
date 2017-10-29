@@ -67,3 +67,33 @@
       img
         width: 100%
         margin-bottom: -5px
+.articleContent
+  max-width: 1080px
+  width: 100%
+  margin: 150px auto 200px
+.wysiwyg
+  color: $black-3
+  +font($primaryFont, 22px, 32px, $black-3, normal, none, none)
+  h1, h2
+    +chageFontSize(38px, 48px)
+    margin-bottom: 38px
+  h3, h4
+    +chageFontSize(30px, 40px)
+    margin-bottom: 30px
+  h5, h6
+    +chageFontSize(28px, 38px)
+    margin-bottom: 28px
+  p, ul, ol, blockquote
+    margin-bottom: 22px
+  ul, ol
+    list-style-position: inside
+  ul li
+    list-style-type: disc
+  ol li
+    list-style-type: decimal
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+  a, a:hover, a:active, a:visited
+    color: $black-3
