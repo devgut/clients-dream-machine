@@ -155,6 +155,7 @@
           margin-top: 5px
 .aboutPage__banauralBeats
   padding-top: 175px
+  padding-bottom: 120px
   &__title
     margin-bottom: 26px
     +font($primaryFont, 46px, 54px, $blue-4, normal, none, none)
@@ -163,10 +164,13 @@
     +font($primaryFont, 22px, 26px, $black-4, normal, none, none)
     p
       margin-bottom: 22px
+    margin-bottom: 60px
   &__items
     display: flex
     flex-flow: row wrap
     align-items: flex-start
+    position: relative
+    left: -25px
   &__item
     width: 50%
     background: $gray-8
@@ -186,3 +190,27 @@
     margin-top: 42px
   &__item:nth-child(1)
     padding-top: 97px
+.aboutPage__brainEntrainment
+  background-image: $spaceGray
+  &__additionalContainer
+    background: url('../images-theme/brainEntrainment__background.png') no-repeat 100% 0px
+    padding-bottom: 100px
+    padding-top: 80px
+  &__title
+    text-align: center
+    +font($primaryFont, 46px, 54px, $blue-4, normal, none, none)
+    margin-bottom: 75px
+  &__description
+    display: flex
+    flex-flow: row wrap
+    &__title
+      +font($primaryFont, 33px, 39px, $white, normal, none, none)
+      margin-bottom: 33px
+    &__text
+      max-width: 550px
+      +font($primaryFont, 22px, 26px, $white, normal, none, none)
+      opacity: 0.5
+      p
+        margin-bottom: 22px
+  &__column
+    width: 50%
