@@ -43,14 +43,17 @@
       +transition(300ms, linear)
     &__content
       display: none
+      position: relative
+      top: -100%
       padding: 0 0 20px 0
+      opacity: 0
       +font($primaryFont, 18px, 24px, $black-5, normal, none, none)
       p
         margin-bottom: 18px
       &::before
         content: ""
         display: block
-        width: 100%
+        width: 0
         height: 3px
         background: $gray-9
         opacity: 0.3
@@ -60,3 +63,22 @@
     color: $blue-4
   .qaPage__tab__content
     display: block
+    animation: showContent 500ms linear
+    animation-fill-mode: forwards
+    &::before
+      animation: showLine 800ms linear
+      animation-fill-mode: forwards
+@keyframes showContent
+  0%
+    opacity: 0
+    transform: translateY(20%)
+  50%
+    transform: translateY(0%)
+    opacity: .7
+  100%
+    opacity: 1
+@keyframes showLine
+  80%
+    width: 0px
+  100%
+    width: 100%
