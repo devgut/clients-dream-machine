@@ -29,12 +29,13 @@
 .qaPage
   &__tabs
     padding-top: 140px
-    +clear-fix()
+    display: flex
+    flex-flow: row wrap
+    &__column
+      width: 50%
   &__tab
-    width: 50%
     padding: 0 50px 0 0
     box-sizing: border-box
-    float: left
     &__title
       +font($primaryFont, 24px, 26px, $black-5, normal, none, none)
       padding: 15px 0px
