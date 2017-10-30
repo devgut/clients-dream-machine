@@ -103,16 +103,19 @@
 .aboutPage__walkingReveries
   background-image: $whiteToBlue
   padding-top: 64px
+  padding-bottom: 80px
   .container
     display: flex
     flex-flow: row wrap
   &__column
     width: 50%
+    &:nth-child(1)
+      padding-right: 20px
   &__picture
     position: relative
     img
       position: absolute
-      left: 0px
+      left: 40px
       top: 0px
       max-width: 561px
   &__title
@@ -129,3 +132,24 @@
     margin-bottom: 20px
     p
       margin-bottom: 22px
+  &__quote
+    text-align: right
+    &__text
+      text-align: left
+      +font($primaryFont, 21px, 25px, $white, normal, none, none)
+      max-width: 400px
+      display: inline-block
+      margin-bottom: 20px
+    &__author
+      +font($primaryFont, 21px, 25px, $white, normal, none, none)
+      opacity: .6
+      padding-right: 30px
+      span
+        display: inline-block
+        &::after
+          content: ""
+          display: block
+          width: 43px
+          height: 3px
+          background: $white
+          margin-top: 5px
