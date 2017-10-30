@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="47px" viewBox="0 0 67 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="DM---About" transform="translate(-922.000000, -3876.000000)" stroke-width="2">
+            <g id="sound" transform="translate(252.000000, 3483.000000)">
+                <g id="Group-2" transform="translate(0.000000, 312.000000)">
+                    <g id="Page-1" transform="translate(671.000000, 82.000000)">
+                        <path d="M11,22 C11,9.85013333 20.6205333,0 32.5,0 C44.3766,0 54,9.85013333 54,22" id="Stroke-1" stroke="#B8B8B8"></path>
+                        <path d="M11,22 C4.92525,22 0,27.149125 0,33.5 C0,39.850875 4.92525,45 11,45 L11,22 Z" id="Stroke-3" stroke="#B8B8B8"></path>
+                        <path d="M54,22 C60.07475,22 65,27.149125 65,33.5 C65,39.850875 60.07475,45 54,45 L54,22 Z" id="Stroke-5" stroke="#B8B8B8"></path>
+                        <polyline id="Stroke-7" stroke="#0460CE" points="49 34.4285714 44.6363636 34.4285714 40.2727273 43 35.9090909 23 30.0909091 37.2857143 25.7272727 28.7142857 21.3636364 34.4285714 17 34.4285714"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
