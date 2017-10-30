@@ -26,3 +26,36 @@
         width: 100%
         +font($headingFont, 52px, 61px, $white, normal, none, none)
         margin-bottom: 10px
+.qaPage
+  &__tabs
+    padding-top: 140px
+    +clear-fix()
+  &__tab
+    width: 50%
+    padding: 0 50px 0 0
+    box-sizing: border-box
+    float: left
+    &__title
+      +font($primaryFont, 24px, 26px, $black-5, normal, none, none)
+      padding: 15px 0px
+      cursor: pointer
+      +transition(300ms, linear)
+    &__content
+      display: none
+      padding: 0 0 20px 0
+      +font($primaryFont, 18px, 24px, $black-5, normal, none, none)
+      p
+        margin-bottom: 18px
+      &::before
+        content: ""
+        display: block
+        width: 100%
+        height: 3px
+        background: $gray-9
+        opacity: 0.3
+        margin-bottom: 20px
+.qaPage__tab.active
+  .qaPage__tab__title
+    color: $blue-4
+  .qaPage__tab__content
+    display: block
