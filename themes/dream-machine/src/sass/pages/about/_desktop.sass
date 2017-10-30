@@ -43,7 +43,7 @@
   &__column
     width: 50%
   &__description
-    +font($primaryFont, 32px, 38px, $black-2, normal, none, none)
+    +font($primaryFont, 32px, 38px, $black-4, normal, none, none)
     max-width: 608px
   &__details
     display: flex
@@ -87,7 +87,7 @@
     text-align: center
     margin-bottom: 50px
   &__description
-    +font($primaryFont, 22px, 26px, $black-2, normal, none, none)
+    +font($primaryFont, 22px, 26px, $black-4, normal, none, none)
     display: flex
     flex-flow: row wrap
     p
@@ -153,3 +153,36 @@
           height: 3px
           background: $white
           margin-top: 5px
+.aboutPage__banauralBeats
+  padding-top: 175px
+  &__title
+    margin-bottom: 26px
+    +font($primaryFont, 46px, 54px, $blue-4, normal, none, none)
+  &__description
+    max-width: 1000px
+    +font($primaryFont, 22px, 26px, $black-4, normal, none, none)
+    p
+      margin-bottom: 22px
+  &__items
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-start
+  &__item
+    width: 50%
+    background: $gray-8
+    box-sizing: border-box
+    padding: 35px
+    &__title
+      +font($primaryFont, 36px, 42px, $blue-4, normal, none, none)
+      margin-bottom: 36px
+    &__description
+      +font($primaryFont, 22px, 26px, $black-4, normal, none, none)
+      margin-bottom: 25px
+      p
+        margin-bottom: 22px
+    &__icon--paddingTop
+      padding-top: 35px
+  &__item:nth-child(2)
+    margin-top: 42px
+  &__item:nth-child(1)
+    padding-top: 97px
