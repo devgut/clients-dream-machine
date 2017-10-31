@@ -14,14 +14,16 @@
       display: inline-block
       +font($headingFont, 52px, 61px, $white, normal, none, uppercase)
 .experiencesList
-  max-width: 1340px
+  max-width: 1420px
   width: 100%
   margin: 0px auto 180px
   display: flex
   flex-flow: row wrap
   &__column
     width: 50%
+    padding: 0px 40px
 .experiencesList__item
+  padding-bottom: 85px
   &__details
     display: flex
     flex-flow: row wrap
@@ -30,15 +32,27 @@
       width: 270px
       position: relative
       z-index: 2
+      img
+        width: 100%
     &__caption
       background: $white-2
       width: calc(100% - 270px)
-      padding: 30px 25px 35px 65px
+      padding: 30px 25px 35px 35px
       position: relative
       z-index: 1
-      left: -35px
+      left: 0px
       bottom: -30px
-      +font($primaryFont, 22px, 26px, $black-2, normal, none, none)
+      +font($primaryFont, 21px, 26px, $black-2, normal, none, none)
+      &::before
+        content: ""
+        display: block
+        position: absolute
+        height: 100%
+        width: 35px
+        left: -35px
+        background: $white-2
+        z-index: 1
+        top: 0
     &__name
       margin-top: 30px
       text-transform: uppercase
@@ -49,3 +63,19 @@
         display: block
         background: $blue-3
         margin-bottom: 6px
+.experiencesList__column:nth-child(2n)
+  position: relative
+  margin-top: -187px
+  &::before
+    display: none
+.experiencesList__item:nth-child(2n)
+  .experiencesList__item__details
+    flex-direction: row-reverse
+    align-items: center
+    bottom: inherit
+    &__caption
+      left: 0px
+      padding: 0px 35px 35px 25px
+      background: transparent
+      &::before
+        display: none
