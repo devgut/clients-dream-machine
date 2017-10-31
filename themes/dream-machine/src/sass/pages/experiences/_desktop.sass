@@ -13,3 +13,39 @@
       background-image: $whiteToBlue
       display: inline-block
       +font($headingFont, 52px, 61px, $white, normal, none, uppercase)
+.experiencesList
+  max-width: 1340px
+  width: 100%
+  margin: 0px auto 180px
+  display: flex
+  flex-flow: row wrap
+  &__column
+    width: 50%
+.experiencesList__item
+  &__details
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-end
+    &__photo
+      width: 270px
+      position: relative
+      z-index: 2
+    &__caption
+      background: $white-2
+      width: calc(100% - 270px)
+      padding: 30px 25px 35px 65px
+      position: relative
+      z-index: 1
+      left: -35px
+      bottom: -30px
+      +font($primaryFont, 22px, 26px, $black-2, normal, none, none)
+    &__name
+      margin-top: 30px
+      text-transform: uppercase
+      &::before
+        content: ""
+        width: 70px
+        height: 3px
+        display: block
+        background: $blue-3
+        margin-bottom: 6px
