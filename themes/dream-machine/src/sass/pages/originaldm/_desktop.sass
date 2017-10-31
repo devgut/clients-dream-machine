@@ -1,0 +1,25 @@
+.originalDM
+  &__head
+    background: $grayBackground
+    position: relative
+  &__header
+    &__picture
+      position: absolute
+      right: 0px
+      top: 0px
+      z-index: 1
+      max-width: 1240px
+      width: 100%
+    &__description
+      position: relative
+      z-index: 2
+      padding: 60px 0 100px
+      &__title
+        +font($headingFont, 52px, 61px, $white, normal, none, none)
+        margin-bottom: 40px
+      &__tagline
+        max-width: 768px
+        +font($primaryFont, 21px, 25px, $white, normal, none, none)
+        opacity: .8
+        p
+          margin-bottom: 21px
