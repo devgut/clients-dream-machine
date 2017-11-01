@@ -1,0 +1,23 @@
+@media screen and (max-width: 540px)
+  .experiencesList__column
+    padding: 0 20px
+  .experiencesList__item__details
+    flex-direction: column
+  .experiencesList__item:nth-child(2n) .experiencesList__item__details
+    flex-direction: column
+  .experiencesList__item__details__caption
+    width: 100%
+    &::before
+      height: 50px
+      top: -50px
+      width: 100%
+      left: 0px
+  .experiencesList__item__details__photo
+    width: 200px
+    margin-bottom: -20px
+    margin-left: -20px
+  .experiencesList__item:nth-child(2n)
+    .experiencesList__item__details__photo
+      margin-right: -80px
+  .experiencesList__item:nth-child(2n) .experiencesList__item__details__caption
+    padding: 20px
