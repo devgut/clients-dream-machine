@@ -2,8 +2,10 @@
   .newsHeader__listHead
     padding-bottom: 100px
     padding-top: 50px
-  .newsHeader__listHead__title
-    +chageFontSize(38px, 48px)
+  .newsHeader__listHead__title,
+  .newsHeader__singleHead__caption
+    +chageFontSize(30px, 40px)
+    left: 20px
   .newsList,
   .newsList__item:nth-child(2n)
     top: 0
@@ -13,3 +15,45 @@
   .newsList__item:nth-child(2n)
     .newsList__item__shortDescription
       right: 35px
+  .newsHeader__singleHead__featuredImage
+    height: 300px
+    img
+      margin-top: 0px
+      width: 250%
+      max-width: 250%
+  .newsHeader__singleHead,
+  .newsHeader__singleHead__caption
+    max-height: 250px
+    overflow: hidden
+  .articleContent
+    padding: 0 20px
+    margin: 100px 0
+  .wysiwyg
+    color: $black-3
+    +font($primaryFont, 18px, 24px, $black-3, normal, none, none)
+    h1, h2
+      +chageFontSize(28px, 38px)
+      margin-bottom: 28px
+    h3, h4
+      +chageFontSize(26px, 36px)
+      margin-bottom: 26px
+    h5, h6
+      +chageFontSize(24px, 32px)
+      margin-bottom: 24px
+    p, ul, ol, blockquote
+      margin-bottom: 20px
+    ul, ol
+      list-style-position: inside
+    ul li
+      list-style-type: disc
+    ol li
+      list-style-type: decimal
+    a
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+    a, a:hover, a:active, a:visited
+      color: $black-3
+    blockquote
+      border-left: 5px solid $white-1
+      padding-left: 20px
