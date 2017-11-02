@@ -1,92 +1,22 @@
+{{$features := .Params.features}}
 <div class="container container--contentWithPadding features">
   <div class="features features__leftColumn">
     <div class="features__list">
-      <div class="features__list__item features__list__item--grayLight">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-1"}}
+      {{range $features.list_of_features}}
+        <div class="features__list__item {{.background_color}}">
+          <div class="features__list__item__icon">
+            <img src="{{.icon}}" alt="">
+          </div>
+          <p class="features__list__item__description">
+            {{.description}} 
+          </p>
         </div>
-        <p class="features__list__item__description">
-          Easy to use interface with scroll frequency selector 
-        </p>
-      </div>
-
-      <div class="features__list__item features__list__item--white">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-2"}}
-        </div>
-        <p class="features__list__item__description">
-          Light and sound mode can be used together or independently 
-        </p>
-      </div>
-
-      <div class="features__list__item">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-3"}}
-        </div>
-        <p class="features__list__item__description">
-          Light and sound mode are best used together
-        </p>
-      </div>
-
-      <div class="features__list__item">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-4"}}
-        </div>
-        <p class="features__list__item__description">
-          Choice of color during flickering light mode
-        </p>
-      </div>
-
-      <div class="features__list__item features__list__item--grayLight">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-5"}}
-        </div>
-        <p class="features__list__item__description">
-          Ability to use flicker flashlight alternately if display is not bright enough
-        </p>
-      </div>
-
-      <div class="features__list__item features__list__item--white">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-6"}}
-        </div>
-        <p class="features__list__item__description">
-          Alternative sound choices as white noise, pink noise, rain or choose your own music
-        </p>
-      </div>
-
-      <div class="features__list__item features__list__item--white">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-7"}}
-        </div>
-        <p class="features__list__item__description">
-          Stroboscopic light generator 
-        </p>
-      </div>
-
-      <div class="features__list__item">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-8"}}
-        </div>
-        <p class="features__list__item__description">
-          Binaural beat generator  integrated into the same interface as stroboscopic light mode
-        </p>
-      </div>
-
-      <div class="features__list__item features__list__item--grayLight">
-        <div class="features__list__item__icon">
-          {{partial "svg/features-icon-9"}}
-        </div>
-        <p class="features__list__item__description">
-          Inexpensive alternative to the several hundred dollar mind machines
-        </p>
-      </div>
-
+      {{end}}
     </div>
   </div>
   <div class="features features__rightColumn">
     <div class="features__sectionTitle">
-      <p>FEATURES</p>
+      <p>{{$features.title}}</p>
     </div>
   </div>
 </div>
