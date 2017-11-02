@@ -46,7 +46,9 @@ fields:
   name: how_it_works
   fields:
   - type: text
-    default: Title
+    default: ''
+    label: Title
+    name: title
   - type: text
     name: description
     label: Description
