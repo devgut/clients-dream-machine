@@ -1,17 +1,16 @@
 baseURL = "https://dream-machine.netlify.com"
-languageCode = "en-us"
-title = "DreamMachine"
-theme = "dream-machine"
 enableRobotsTXT = true
+languageCode = "en-us"
+theme = "dream-machine"
+title = "DreamMachine"
 [[menu.main]]
-[params]
-[params.ui]
-show_menu = "MENU"
-close_menu = "CLOSE"
-[params.subscription]
-description = ""
-input_placeholder = ""
-submit_button_placeholder = ""
-subscribe_form_action = ""
 [params.app_store]
-link = ""
+link = "https://itunes.apple.com/us/app/dreamachine-the-key-to-creativity/id1229373775?ls=1&mt=8"
+[params.subscription]
+description = "Dreamachine was made with care and patience because I have found it personally helpful to stimulate creative thought and relax."
+input_placeholder = "Enter your email to subscribe to our newsletter"
+submit_button_placeholder = "SUBSCRIBE"
+subscribe_form_action = "https://dreamachine.us17.list-manage.com/subscribe/post?u=9078fb5a1a5b398d9bf236fdb&amp;id=d5a131403c"
+[params.ui]
+close_menu = "CLOSE"
+show_menu = "MENU"
