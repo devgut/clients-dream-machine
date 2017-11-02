@@ -36,3 +36,16 @@ fields:
   - type: file
     name: image
     label: Image
+- type: field_group_list
+  label: Right column
+  name: right_column
+  fields:
+  - type: text
+    name: author
+    label: Author
+  - type: text
+    name: quote
+    label: Quote
+  - type: file
+    name: image
+    label: Image
