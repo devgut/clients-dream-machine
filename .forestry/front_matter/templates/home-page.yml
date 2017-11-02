@@ -117,3 +117,12 @@ fields:
     - type: file
       name: icon
       label: Icon
+    - type: select
+      name: background_color
+      config:
+        source:
+          type: simple
+        options:
+        - features__list__item--grayLight
+        - features__list__item--white
+      label: Background color
