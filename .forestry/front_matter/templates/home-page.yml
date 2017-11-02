@@ -96,3 +96,24 @@ fields:
       label: Description
       config:
         required: true
+- type: field_group
+  label: Features
+  name: features
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: field_group_list
+    name: list_of_features
+    label: List of features
+    fields:
+    - type: textarea
+      name: description
+      label: Description
+      config:
+        required: true
+    - type: file
+      name: icon
+      label: Icon
