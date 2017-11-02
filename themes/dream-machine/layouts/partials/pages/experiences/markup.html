@@ -1,169 +1,44 @@
+{{$experiences := .Params}}
 <div class="container--fluid experiencesHeader">
   <div class="experiencesHeader__listHead">
     <div class="experiencesHeader__listHead__title">
-      <h1>{{ .Params.title }}</h1>
+      <h1>{{$experiences.title}}</h1>
     </div>
   </div>
 </div>
 <div class="experiencesList">
   <div class="experiencesList__column">
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/bryon-gysin.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>“Vision start with a kaleidoscope of colors on a plane in front of
-            the eyes and gradually become more complex and beautiful, looking like
-            the surf on the shore until whole patterns of color are pounding to get in.
-            After a while the visions were permanently
-            behind my eyes and I was in the middle of the whole scene  with limitless
-            patterns generated around me. ”</p>
-          <div class="experiencesList__item__details__name">
-            <span>Bryon Gysin</span>
+    {{range $experiences.left_column}}
+      <div class="experiencesList__item">
+        <div class="experiencesList__item__details">
+          <div class="experiencesList__item__details__photo">
+            <img src="{{.image}}" alt="">
+          </div>
+          <div class="experiencesList__item__details__caption">
+            <p>{{.quote}}</p>
+            <div class="experiencesList__item__details__name">
+              <span>{{.author}}</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/william-grey-walter.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>Flicker  proved  to be a key to many doors. We used it for us as a clinical aid in the diagnosis of
-            epilepsy, from the very first it's revelations were fundamental both clinic in laboratory. </p>
-          <div class="experiencesList__item__details__name">
-            <span>william grey walter</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/edgar-allen-poe.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>These ‘fancies’ have in them a pleasurable ecstasy, as far beyond
-            the most pleasurable of the world of wakefulness, or of dreams, as the
-            Heaven of the Northman theology is beyond its Hell. I regard the visions,
-            even as they arise, with an awe which, in some measure, moderates or tranquilizes the ecstasy.</p>
-          <div class="experiencesList__item__details__name">
-            <span>edgar allen poe</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/david-bowie.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>Utilized the Dreamachine during the conception and production of the album Diamond
-            Dogs known for the hit song: “ Rebel Rebel.”</p>
-          <div class="experiencesList__item__details__name">
-            <span>David Bowie</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/david-bowie.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>“I looked into it – it sets up optical fields as religious and mandalic as the hallucinogenic drugs –
-it’s like being able to have jeweled Biblical designs and landscapes without taking chemicals.”</p>
-          <div class="experiencesList__item__details__name">
-            <span>Allen Ginsberg</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{end}}
   </div>
   <div class="experiencesList__column">
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/william-burroughs.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>Subjects report dazzling lights and unearthly brilliance and color...
-            Elaborate geometric constructions of incredible intricacy build up
-            from multidimensional mosaic into living fireballs like the mandalas
-            of Eastern Mysticism or resolve momentarily into apparently individual
-            images and powerfully dramatic scenes like brightly colored dreams.</p>
-          <div class="experiencesList__item__details__name">
-            <span>William Burroughs</span>
+    {{range $experiences.right_column}}
+      <div class="experiencesList__item">
+        <div class="experiencesList__item__details">
+          <div class="experiencesList__item__details__photo">
+            <img src="{{.image}}" alt="">
+          </div>
+          <div class="experiencesList__item__details__caption">
+            <p>{{.quote}}</p>
+            <div class="experiencesList__item__details__name">
+              <span>{{.author}}</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/david-bowie.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>Utilized the Dreamachine during the conception and production of the album Diamond
-            Dogs known for the hit song: “ Rebel Rebel.”</p>
-          <div class="experiencesList__item__details__name">
-            <span>David Bowie</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/kurt-cobain.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>Use a device similar to the dreamachine to reduce stress and amplify
-            the clarity of his dreams. He states, ““I dreamed about
-German shepherds … eating flowers and smoking potpourri….it’s really amazing, it really works.”</p>
-          <div class="experiencesList__item__details__name">
-            <span>Kurt Cobain</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/margiad-evans.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>Lights like comets dangled before me, slow at first and then gaining
-            a fury of speed and change, whirling colour into colour, angle into angle.
-            They were all pure ultra unearthly colours, mental colours, not deep visual
-            ones. There was no glow in them but only activity and revolution</p>
-          <div class="experiencesList__item__details__name">
-            <span>margiad evans</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="experiencesList__item">
-      <div class="experiencesList__item__details">
-        <div class="experiencesList__item__details__photo">
-          <img src="/images-theme/bryon-gysin.jpg" alt="">
-        </div>
-        <div class="experiencesList__item__details__caption">
-          <p>“Vision start with a kaleidoscope of colors on a plane in front of
-            the eyes and gradually become more complex and beautiful, looking like
-            the surf on the shore until whole patterns of color are pounding to get in.
-            After a while the visions were permanently
-            behind my eyes and I was in the middle of the whole scene  with limitless
-            patterns generated around me. ”</p>
-          <div class="experiencesList__item__details__name">
-            <span>Bryon Gysin</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{end}}
   </div>
 </div>
