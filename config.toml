@@ -4,3 +4,14 @@ title = "DreamMachine"
 theme = "dream-machine"
 enableRobotsTXT = true
 [[menu.main]]
+[params]
+[params.ui]
+show_menu = "MENU"
+close_menu = "CLOSE"
+[params.subscription]
+description = ""
+input_placeholder = ""
+submit_button_placeholder = ""
+subscribe_form_action = ""
+[params.app_store]
+link = ""
