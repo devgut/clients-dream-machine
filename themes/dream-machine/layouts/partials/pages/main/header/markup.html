@@ -1,78 +1,38 @@
+{{ $header := .Params.header}}
+{{ $site := .Site.Params}}
 <div class="container--fluid mainPageHeader">
   <div class="container mainPageHeader__innerShifted mainPageHeader__slider">
-    <div class="mainPageHeader__slide">
-      <img src="/images-theme/main-page-header-background.jpg" alt="">
-      <div class="mainPageHeader__slide__content">
-        <div class="mainPageHeader__heading">
-          <h1 class="mainPageHeader__heading__title">
-            The Key to Creativity
-          </h1>
-          <p class="mainPageHeader__heading__description">
-            Experience a digital version of a famous device that William Burroughs, Allen Ginsberg, Kurt Cobain, David Bowie and Paul McCartney used to enhance creativity.
-          </p>
-          <div class="mainPageHeader__heading__cta">
-            <a href="" class="mainPageHeader__heading__appStore">
-              {{partial "svg/app-store-button"}}
-            </a>
-          </div>
-        </div>
-        <div class="mainPageHeader__excerptions">
-          <div class="mainPageHeader__excerption">
-            <div class="mainPageHeader__excerption__description">
-              <p>Recharge the brain by closing eyes.</p>
-            </div>
-            <div class="mainPageHeader__excerption__author">
-              <span class="bottomDash">William Grey Walter</span>
+    {{ range $header.slider }}
+      <div class="mainPageHeader__slide">
+        <img src="{{.slider_image}}" alt="">
+        <div class="mainPageHeader__slide__content">
+          <div class="mainPageHeader__heading">
+            <h1 class="mainPageHeader__heading__title">
+              {{ $header.title }}
+            </h1>
+            <p class="mainPageHeader__heading__description">
+              {{ $header.description }}
+            </p>
+            <div class="mainPageHeader__heading__cta">
+              <a href="{{ $site.app_store.link }}" target="_blank" class="mainPageHeader__heading__appStore">
+                {{partial "svg/app-store-button"}}
+              </a>
             </div>
           </div>
-          <div class="mainPageHeader__excerption">
-            <div class="mainPageHeader__excerption__description">
-              <p>Sitting in front of a fire is mesmerizing. It’s magical.
-                I feel the same way about electricity. And smoke. And flickering lights.</p>
-            </div>
-            <div class="mainPageHeader__excerption__author">
-              <span class="bottomDash">David Lynch</span>
-            </div>
+          <div class="mainPageHeader__excerptions">
+            {{ range $header.quotes }}
+              <div class="mainPageHeader__excerption">
+                <div class="mainPageHeader__excerption__description">
+                  <p>{{ .quote }}</p>
+                </div>
+                <div class="mainPageHeader__excerption__author">
+                  <span class="bottomDash">{{ .author }}</span>
+                </div>
+              </div>
+            {{ end }}
           </div>
         </div>
       </div>
-    </div>
-    <div class="mainPageHeader__slide">
-      <img src="/images-theme/main-page-header-background-2.jpg" alt="">
-      <div class="mainPageHeader__slide__content">
-        <div class="mainPageHeader__heading">
-          <h1 class="mainPageHeader__heading__title">
-            The Key to Creativity
-          </h1>
-          <p class="mainPageHeader__heading__description">
-            Experience a digital version of a famous device that William Burroughs, Allen Ginsberg, Kurt Cobain, David Bowie and Paul McCartney used to enhance creativity.
-          </p>
-          <div class="mainPageHeader__heading__cta">
-            <a href="{{ .Site.Params.app_store.link }}" target="_blank" class="mainPageHeader__heading__appStore">
-              {{partial "svg/app-store-button"}}
-            </a>
-          </div>
-        </div>
-        <div class="mainPageHeader__excerptions mainPageHeader__excerptions--alignLeft">
-          <div class="mainPageHeader__excerption">
-            <div class="mainPageHeader__excerption__description">
-              <p>Recharge the brain by closing eyes.</p>
-            </div>
-            <div class="mainPageHeader__excerption__author mainPageHeader__excerption__author--alignLeft">
-              <span class="bottomDash">William Grey Walter</span>
-            </div>
-          </div>
-          <div class="mainPageHeader__excerption">
-            <div class="mainPageHeader__excerption__description">
-              <p>Sitting in front of a fire is mesmerizing. It’s magical.
-                I feel the same way about electricity. And smoke. And flickering lights.</p>
-            </div>
-            <div class="mainPageHeader__excerption__author mainPageHeader__excerption__author--alignLeft">
-              <span class="bottomDash">David Lynch</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{ end }}
   </div>
 </div>
