@@ -1,3 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "https://dream-machine.netlify.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "DreamMachine"
+theme = "dream-machine"
+enableRobotsTXT = true
+[[menu.main]]
