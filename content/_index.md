@@ -72,5 +72,6 @@ features:
     icon: "/uploads/2017/11/02/features-icon-8.svg"
   - description: Inexpensive alternative to the several hundred dollar mind machines
     icon: "/uploads/2017/11/02/features-icon-9.svg"
+    background_color: features__list__item--grayLight
 
 ---
