@@ -1,3 +1,8 @@
 ---
 hide_body: false
-fields: []
+fields:
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
