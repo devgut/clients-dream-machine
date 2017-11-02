@@ -51,6 +51,25 @@ benefits:
 features:
   title: FEATURES
   list_of_features:
+  - description: 'Light and sound mode can be used together or independently '
+    icon: "/uploads/2017/11/02/features-icon-2.svg"
+  - description: Light and sound mode are best used together
+    icon: "/uploads/2017/11/02/features-icon-3.svg"
+  - description: Choice of color during flickering light mode
+    icon: "/uploads/2017/11/02/features-icon-4.svg"
+  - description: Ability to use flicker flashlight alternately if display is not bright
+      enough
+    icon: "/uploads/2017/11/02/features-icon-5.svg"
+  - description: Alternative sound choices as white noise, pink noise, rain or choose
+      your own music
+    icon: "/uploads/2017/11/02/features-icon-6.svg"
+  - description: 'Stroboscopic light generator '
+    icon: "/uploads/2017/11/02/features-icon-7.svg"
+  - description: "Binaural beat generator \Lintegrated into the same interface as
+      stroboscopic light mode"
+    icon: "/uploads/2017/11/02/features-icon-8.svg"
+  - description: Inexpensive alternative to the several hundred dollar mind machines
+    icon: "/uploads/2017/11/02/features-icon-9.svg"
   - description: Easy to use interface with scroll frequency selector
     icon: "/uploads/2017/11/02/features-icon-1.svg"
 
