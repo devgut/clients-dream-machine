@@ -12,13 +12,6 @@ fields:
   label: Page header
   name: header
   fields:
-  - type: field_group_list
-    name: slider
-    label: Slider
-    fields:
-    - type: file
-      name: slider_image
-      label: Slider image
   - type: text
     label: Title
     name: title
@@ -27,3 +20,24 @@ fields:
     name: description
     config:
       required: false
+  - type: field_group_list
+    name: slider
+    label: Slider
+    fields:
+    - type: file
+      name: slider_image
+      label: Slider image
+  - type: field_group_list
+    name: quotes
+    label: Quotes
+    fields:
+    - type: text
+      name: author
+      label: Author
+      config:
+        required: true
+    - type: text
+      name: quote
+      label: Quote
+      config:
+        required: true
