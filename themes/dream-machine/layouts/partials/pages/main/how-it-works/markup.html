@@ -1,47 +1,29 @@
+{{$howItWorks := .Params.how_it_works}}
 <div class="container container--content howItWorks">
   <div class="howItWorks__header">
     <p class="howItWorks__header__title">
-      How it Works
+      {{ $howItWorks.title }}
     </p>
     <p class="howItWorks__header__description">
-      Choose which frequency to stimulate different states of your brains behaviour. Access relaxed states of mind, creativity and even hallucinatory states
+      {{ $howItWorks.description }}
     </p>
   </div>
-
-
   <div class="howItWorksTabs">
     <div class="howItWorksTabs__tabs">
       <div class="howItWorksTabs__tabsNavigation">
         <ul>
-          <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item" data-tab="1">
-            <p class="howItWorksTabs__tabsNavigation__item__title">LIGHT MODE</p>
-            <span class="howItWorksTabs__tabsNavigation__item__description">
-              <p>
-                Scroll through the wave lenghts and choose a frequency wave to tap into.
-                Pick a color and activate the machine.
-              </p>
-              <p>
-                This is best used with <a href="">Google Cardboard</a> or placed over closed eyes.  
-              </p>
-            </span>
-          </li>
-          <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item" data-tab="2">
-            <p class="howItWorksTabs__tabsNavigation__item__title">Sound MODE</p>
-            <span class="howItWorksTabs__tabsNavigation__item__description">
-              <p>
-                In addition to choosing a light frequency, you are also able to
-                set your journey to binaural beats, or to your own sounds.
-                Choose the sound frequency and click play.
-              </p>
-              <p>
-                This is best used with headphones.
-              </p>
-            </span>
-          </li>
+          {{ range $key, $value := $howItWorks.tabs }}
+            <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item" data-tab="{{ $key }}">
+              <p class="howItWorksTabs__tabsNavigation__item__title">{{ .title }}</p>
+              <span class="howItWorksTabs__tabsNavigation__item__description">
+                {{ .description | markdownify }}
+              </span>
+            </li>
+          {{ end }}
         </ul>
       </div>
       <div class="howItWorksTabs__tabsContent">
-        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="1">
+        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="0">
           <div class="howItWorksTabs__tab__icon">
             {{partial "svg/google-cardboard-icon" }}
           </div>
@@ -49,7 +31,7 @@
             <img src="/images-theme/how-it-works-light-mode.png" alt="">
           </div>
         </div>
-        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="2">
+        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="1">
           <div class="howItWorksTabs__tab__icon">
             {{partial "svg/sound-mode-icon" }}
           </div>
