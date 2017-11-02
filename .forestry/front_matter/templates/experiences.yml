@@ -1,0 +1,14 @@
+---
+hide_body: true
+fields:
+- type: text
+  name: type
+  label: type
+  default: experiences
+  hidden: true
+  config:
+    required: true
+- type: text
+  label: layout
+  name: layout
+  default: experiences
