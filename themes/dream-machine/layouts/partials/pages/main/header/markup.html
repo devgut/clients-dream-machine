@@ -20,14 +20,21 @@
             </div>
           </div>
           <div class="mainPageHeader__excerptions">
-            {{ range $header.quotes }}
+            {{ $currentSlide := . }}
+              {{ range $header.quotes }}
               <div class="mainPageHeader__excerption">
-                <div class="mainPageHeader__excerption__description">
-                  <p>{{ .quote }}</p>
+              <div class="mainPageHeader__excerption__description">
+              <p>{{ .quote }}</p>
+              </div>
+              {{ if $currentSlide.mirror_quotes }}
+                <div class="mainPageHeader__excerption__author mainPageHeader__excerption__author--alignLeft">
+                  <span class="bottomDash">{{ .author }}</span>
                 </div>
+              {{ else }}
                 <div class="mainPageHeader__excerption__author">
                   <span class="bottomDash">{{ .author }}</span>
                 </div>
+              {{ end }}
               </div>
             {{ end }}
           </div>
