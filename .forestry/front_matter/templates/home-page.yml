@@ -27,6 +27,9 @@ fields:
     - type: file
       name: slider_image
       label: Slider image
+    - type: boolean
+      name: mirror_quotes
+      label: Mirror quotes
   - type: field_group_list
     name: quotes
     label: Quotes
