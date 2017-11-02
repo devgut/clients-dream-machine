@@ -77,5 +77,21 @@ features:
   - description: Inexpensive alternative to the several hundred dollar mind machines
     icon: "/uploads/2017/11/02/features-icon-9.svg"
     background_color: features__list__item--grayLight
+tips:
+  title: TIPS
+  left_column:
+  - text: Enhance the flicker effect by using Google Cardboard or a flickering flashlight
+  - text: Enhance your experience with sound, beats for music
+  - text: Start w/ 6Hz for hypnagogic imagery
+  - text: Try the Earth's vibration with binaural beats set at 7.83 Hz, i.e. the Schumann
+      resonance
+  - text: Darken the room, engage the Dreamachine and close your eyes
+  right_column:
+  - text: Everyone has a unique Alpha sweet spot. When you find your sweet spot, you’ll
+      notice that the visions and the clarity of the shapes behind your eyes will
+      be sharper and the colors will be vibrant. we are all unique, so using flickering
+      light and finding your sweet spot is a discovery process
+  - text: Experiment w/ different combinations of light and sound frequencie
+  - text: Begin with 10 Hz for enhancing Alpha brain wave activity asnd boosting creativity
 
 ---
