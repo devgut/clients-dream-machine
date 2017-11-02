@@ -11,10 +11,10 @@
   "scripts": {
     "start": "npm-run-all --parallel webpack-watch hugo-server",
     "hugo-build": "rm -rf public && hugo",
-    "hugo-server": "hugo server --config=config.dev.local.toml",
+    "hugo-server": "hugo server",
     "webpack-watch": "webpack --watch --config webpack.dev.conf.js",
-    "build-dev": "rm -rf public && webpack --config webpack.prod.conf.js && hugo --config=config.dev.toml",
-    "build-prod": "rm -rf public && webpack --config webpack.prod.conf.js && hugo --config=config.prod.toml"
+    "build-dev": "rm -rf public && webpack --config webpack.prod.conf.js && hugo",
+    "build-prod": "rm -rf public && webpack --config webpack.prod.conf.js && hugo"
   },
   "repository": {
     "type": "git",
