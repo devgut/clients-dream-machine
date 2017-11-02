@@ -17,3 +17,22 @@ fields:
   hidden: true
   config:
     required: true
+- type: text
+  label: Title
+  name: title
+  hidden: false
+  config:
+    required: true
+- type: field_group_list
+  label: Left column
+  name: left_column
+  fields:
+  - type: text
+    label: Author
+    name: author
+  - type: text
+    name: quote
+    label: Quote
+  - type: file
+    name: image
+    label: Image
