@@ -1,3 +1,4 @@
+{{$currentPage := .URL}}
 <div class="sidebarMenu">
   <div class="sidebarMenu__navigation">
     <span class="sidebarMenu__closeMenu">{{ .Site.Params.ui.close_menu }}</span>
@@ -5,9 +6,14 @@
   <div class="sidebarMenu__navigation__list">
     <ul>
       {{ range .Site.Menus.main }}
-        <li>
-          <a href="{{ .URL }}" class="active">{{ .Name }}</a>
-        </li>
+        {{if .URL }}
+          <li>
+            {{if eq $currentPage .URL}}
+              <a href="{{ .URL }}" class="active">{{ .Name }}</a>
+            {{else}}
+              <a href="{{ .URL }}">{{ .Name }}</a> {{end}}
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
   </div>
