@@ -1,7 +1,7 @@
 ---
 pages:
 - _index.md
-hide_body: false
+hide_body: true
 fields:
 - type: text
   label: Title
@@ -126,3 +126,30 @@ fields:
         - features__list__item--grayLight
         - features__list__item--white
       label: Background color
+- type: field_group
+  label: Tips
+  name: tips
+  fields:
+  - type: text
+    label: Title
+    name: title
+    config:
+      required: true
+  - type: field_group_list
+    name: left_column
+    label: Left column
+    fields:
+    - type: textarea
+      name: text
+      label: Text
+      config:
+        required: true
+  - type: field_group_list
+    name: right_column
+    label: Right column
+    fields:
+    - type: textarea
+      name: text
+      label: Text
+      config:
+        required: true
