@@ -30,9 +30,11 @@ fields:
   - type: text
     label: Author
     name: author
-  - type: text
+  - type: textarea
     name: quote
     label: Quote
+    config:
+      required: true
   - type: file
     name: image
     label: Image
