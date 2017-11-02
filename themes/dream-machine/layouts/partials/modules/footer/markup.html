@@ -8,24 +8,11 @@
     </div>
     <div class="footer__navigation">
       <ul>
-        <li>
-          <a href="">About</a>
-        </li>
-        <li>
-          <a href="">Experiences</a>
-        </li>
-        <li>
-          <a href="">News</a>
-        </li>
-        <li>
-          <a href="">Original Dreamachine</a>
-        </li>
-        <li>
-          <a href="">Q&A</a>
-        </li>
-        <li>
-          <a href="">Contact</a>
-        </li>
+        {{ range .Site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}" class="active">{{ .Name }}</a>
+          </li>
+        {{ end }}
       </ul>
     </div>
     <div class="footer__cta">
