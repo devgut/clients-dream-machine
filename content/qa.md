@@ -1,6 +1,9 @@
 +++
-title = "Q&A"
-slug = "qa"
 layout = "qa"
+slug = "qa"
+title = "Q&A"
 type = "qa"
+[menu.main]
+weight = 3
+
 +++

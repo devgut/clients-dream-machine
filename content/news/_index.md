@@ -1,4 +1,5 @@
 +++
-title = "NEWS"
 slug = "news"
+title = "NEWS"
+
 +++
