@@ -73,3 +73,26 @@ fields:
     - type: file
       name: featured_image
       label: Featured image
+- type: field_group
+  name: benefits
+  label: Benefits
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: field_group_list
+    name: list_of_benefits
+    label: List of benefits
+    fields:
+    - type: text
+      name: title
+      label: Title
+      config:
+        required: true
+    - type: textarea
+      name: description
+      label: Description
+      config:
+        required: true
