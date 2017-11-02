@@ -12,3 +12,6 @@ fields:
   label: layout
   name: layout
   default: experiences
+  hidden: true
+  config:
+    required: true
