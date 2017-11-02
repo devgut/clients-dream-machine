@@ -30,5 +30,23 @@ how_it_works:
     description: In addition to choosing a light frequency, you are also able to set
       your journey to binaural beats, or to your own sounds. Choose the sound frequency
       and click play.<br><br>This is best used with headphones.
+benefits:
+  title: BENEFITS
+  list_of_benefits:
+  - title: Solve Problems
+    description: Retrieve visions, expand imagination and create associations between
+      an imaginary and verbal world. The hypnagogic state has been utilized in different
+      ways to form some of the most groundbreaking discoveries.
+  - title: Mind’s Theater
+    description: You may choose to venture into the hypnagogic state; the place the
+      mind travels between sleeping and ordinary consciousness.
+  - title: Optimize Cognitive Function
+    description: Flickering light has been utilized to reduce symptoms of ADHD, reduce
+      depression and heighten creativity. In one study out of Western Washington University.
+  - title: Sleep and Learning
+    description: Binaural beats have been used to elicit sleep. Frequencies in the
+      Delta range combined with melatonin may provide restful sleep. Researchers have
+      noticed that adequate sleep is needed to properly learn and create positive
+      connections.
 
 ---
