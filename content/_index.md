@@ -48,5 +48,10 @@ benefits:
       Delta range combined with melatonin may provide restful sleep. Researchers have
       noticed that adequate sleep is needed to properly learn and create positive
       connections.
+features:
+  title: FEATURES
+  list_of_features:
+  - description: Easy to use interface with scroll frequency selector
+    icon: "/uploads/2017/11/02/features-icon-1.svg"
 
 ---
