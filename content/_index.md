@@ -51,6 +51,8 @@ benefits:
 features:
   title: FEATURES
   list_of_features:
+  - description: Easy to use interface with scroll frequency selector
+    icon: "/uploads/2017/11/02/features-icon-1.svg"
   - description: 'Light and sound mode can be used together or independently '
     icon: "/uploads/2017/11/02/features-icon-2.svg"
   - description: Light and sound mode are best used together
@@ -70,7 +72,5 @@ features:
     icon: "/uploads/2017/11/02/features-icon-8.svg"
   - description: Inexpensive alternative to the several hundred dollar mind machines
     icon: "/uploads/2017/11/02/features-icon-9.svg"
-  - description: Easy to use interface with scroll frequency selector
-    icon: "/uploads/2017/11/02/features-icon-1.svg"
 
 ---
