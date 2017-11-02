@@ -11,3 +11,11 @@ fields:
 - type: field_group
   label: Page header
   name: header
+  fields:
+  - type: field_group_list
+    name: slider
+    label: Slider
+    fields:
+    - type: file
+      name: slider_image
+      label: Slider image
