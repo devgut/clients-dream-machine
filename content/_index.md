@@ -53,8 +53,10 @@ features:
   list_of_features:
   - description: Easy to use interface with scroll frequency selector
     icon: "/uploads/2017/11/02/features-icon-1.svg"
+    background_color: features__list__item--grayLight
   - description: 'Light and sound mode can be used together or independently '
     icon: "/uploads/2017/11/02/features-icon-2.svg"
+    background_color: features__list__item--white
   - description: Light and sound mode are best used together
     icon: "/uploads/2017/11/02/features-icon-3.svg"
   - description: Choice of color during flickering light mode
@@ -62,11 +64,13 @@ features:
   - description: Ability to use flicker flashlight alternately if display is not bright
       enough
     icon: "/uploads/2017/11/02/features-icon-5.svg"
+    background_color: features__list__item--grayLight
   - description: Alternative sound choices as white noise, pink noise, rain or choose
       your own music
     icon: "/uploads/2017/11/02/features-icon-6.svg"
   - description: 'Stroboscopic light generator '
     icon: "/uploads/2017/11/02/features-icon-7.svg"
+    background_color: features__list__item--white
   - description: "Binaural beat generator \Lintegrated into the same interface as
       stroboscopic light mode"
     icon: "/uploads/2017/11/02/features-icon-8.svg"
