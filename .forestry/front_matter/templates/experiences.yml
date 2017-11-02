@@ -45,9 +45,11 @@ fields:
   - type: text
     name: author
     label: Author
-  - type: text
+  - type: textarea
     name: quote
     label: Quote
+    config:
+      required: true
   - type: file
     name: image
     label: Image
