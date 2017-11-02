@@ -19,3 +19,11 @@ fields:
     - type: file
       name: slider_image
       label: Slider image
+  - type: text
+    label: Title
+    name: title
+  - type: textarea
+    label: Description
+    name: description
+    config:
+      required: false
