@@ -41,3 +41,33 @@ fields:
       label: Quote
       config:
         required: true
+- type: field_group
+  label: How it works
+  name: how_it_works
+  fields:
+  - type: text
+    default: Title
+  - type: text
+    name: description
+    label: Description
+  - type: field_group_list
+    name: tabs
+    label: Tabs
+    fields:
+    - type: text
+      label: Title
+      name: title
+      config:
+        required: true
+    - type: textarea
+      config:
+        wysiwyg: true
+        required: true
+      label: Description
+      name: description
+    - type: file
+      name: icon
+      label: Icon
+    - type: file
+      name: featured_image
+      label: Featured image
