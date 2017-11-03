@@ -21,3 +21,11 @@ fields:
     required: true
   hidden: true
   default: news
+- type: file
+  name: preview_image
+  label: Preview image
+  description: 630x310px
+- type: file
+  name: large_image
+  label: Large image
+  description: 1724x535px
