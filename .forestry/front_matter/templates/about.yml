@@ -1,3 +1,26 @@
 ---
 hide_body: false
-fields: []
+fields:
+- type: text
+  label: Title
+  name: title
+- type: text
+  label: Header title
+  name: header_title
+- type: text
+  name: header_tagline
+  label: Header tagline
+- type: text
+  name: layout
+  label: Layout
+  config:
+    required: true
+  hidden: true
+  default: about
+- type: text
+  config:
+    required: true
+  hidden: true
+  label: type
+  name: type
+  default: about
