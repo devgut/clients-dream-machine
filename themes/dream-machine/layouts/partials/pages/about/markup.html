@@ -1,10 +1,11 @@
+{{$about := .Params}}
 <div class="container--fluid aboutPage__head">
   <div class="aboutPage__header">
     <div class="aboutPage__header__featuredImage">
       <img src="/images-theme/about-header-banner.jpg" alt="">
       <div class="aboutPage__header__caption">
-        <h1 class="aboutPage__header__caption__title">{{ .Params.title }}</h1>
-        <p class="aboutPage__header__caption__tagline">{{ .Params.tagline }}</p>
+        <h1 class="aboutPage__header__caption__title">{{ $about.header_title }}</h1>
+        <p class="aboutPage__header__caption__tagline">{{ $about.header_tagline }}</p>
       </div>
     </div>
   </div>
@@ -12,24 +13,20 @@
 <div class="aboutPage__blockquote">
   <div class="aboutPage__blockquote__column">
     <div class="aboutPage__blockquote__description">
-      <p>Discover a source of creativity sparked inspirations from artists
-        and scientists from William S. Burroughs, David Bowie, Paul McCartney,
-        Kurt Cobain, & Jan Purkinje.</p>
+      <p>{{$about.qouto.description | markdownify}}</p>
     </div>
   </div>
   <div class="aboutPage__blockquote__column">
     <div class="aboutPage__blockquote__details">
       <div class="aboutPage__blockquote__details__photo">
-        <img src="/images-theme/alen-ginsberg.jpg" alt="">
+        <img src="{{$about.qouto.photo}}" alt="">
       </div>
       <div class="aboutPage__blockquote__details__caption">
         <p>
-          “I looked into it – it sets up optical fields as religious and mandalic
-          as the hallucinogenic drugs – it’s like being able to have jeweled
-          Biblical designs and landscapes without taking chemicals.”
+          {{$about.qouto.quote}}
         </p>
         <div class="aboutPage__blockquote__details__name">
-          <span>Allen Ginsberg</span>
+          <span>{{$about.qouto.author}}</span>
         </div>
       </div>
     </div>
@@ -38,23 +35,11 @@
 <div class="container--fluid aboutPage__alphaWaves">
   <div class="aboutPage__alphaWaves__container">
     <div class="aboutPage__alphaWaves__title">
-      <p>Alpha Waves</p>
+      <p>{{$about.alpha_waves.title}}</p>
     </div>
     <div class="aboutPage__alphaWaves__description">
-      <p>Researchers have found a correlation between Alpha brain waves and
-        creative thinking either through mindfulness meditation, transcendental
-        meditation or electrical stimulation.</p>
-      <p>Alpha waves are often present during relaxation exercises, daydreaming
-        or in the practice of mindfulness. Some studies have even shown that simply
-        walking through the woods can increase Alpha band production.</p>
-      <p>In a recent study, out of the University of North Carolina, a low-dose
-        electric current of 10 Hz was noted for enhancing Alpha brain wave activity
-        and boosting creativity by 7.4%.</p>
-      <p>Concurrently, Alpha waves are also useful to those suffering from
-        depression. Researchers suppose people with depressive symptoms are
-        engaged in  repetitive thought processes. If Alpha wave production is
-        enhanced with flickering light; depression
-        may be reduced with a noninvasive and inexpensive treatment to enhance well-being.</p>
+      <p>{{$about.alpha_waves.description_left_column | markdownify}}</p>
+      <p>{{$about.alpha_waves.description_right_column | markdownify}}</p>
     </div>
   </div>
 </div>
@@ -63,43 +48,18 @@
   <div class="container container--contentWithPadding">
     <div class="tips__list">
       <div class="tips__list__column">
-        <div class="tips__list__item">
-          <p>Combined with the power of binaural beats and trance-like sound
-            choices, it provides the user with the choice to stimulate their
-            mind for concentration, meditate for relaxation or enter a dream-like
-            state for creativity and visions.</p>
-        </div>
-        <div class="tips__list__item">
-          <p>Dreamachine is a stroboscopic and sound device that aligns your
-            brainwaves to a desired state of consciousness. </p>
-        </div>
-        <div class="tips__list__item">
-          <p>The app was designed to stimulate Alpha and Theta brainwaves via entrainment.</p>
-        </div>
-        <div class="tips__list__item">
-          <p>Dreamachine is a means to conscious dreaming. </p>
-        </div>
-        <div class="tips__list__item">
-          <p>Dreamachine works best with Google cardboard and headphones.</p>
-        </div>
+        {{range $about.tips_left_column}}
+          <div class="tips__list__item">
+            <p>{{.item}}</p>
+          </div>
+        {{end}}
       </div>
       <div class="tips__list__column">
-        <div class="tips__list__item">
-          <p>Primarily used as a tool for creativity, Dreamachine also has a
-            wide range of purposes.</p>
-        </div>
-        <div class="tips__list__item">
-          <p>Dreamachine can help relax and calm your mental state.</p>
-        </div>
-        <div class="tips__list__item">
-          <p>The University of North Carolina researchers have demonstrated that
-            stroboscopic light to enhance Alpha brain wave activity,
-            boosts creativity and reduced depression.</p>
-        </div>
-        <div class="tips__list__item">
-          <p>Stroboscopic light has been used as a visionary aid since antiquity
-            by the likes of Ptolemy, Aristotle, and Nostradamus.</p>
-        </div>
+        {{range $about.tips_right_column}}
+          <div class="tips__list__item">
+            <p>{{.item}}</p>
+          </div>
+        {{end}}
       </div>
     </div>
   </div>
@@ -108,70 +68,53 @@
   <div class="container container--contentWithPadding">
     <div class="aboutPage__walkingReveries__column">
       <div class="aboutPage__walkingReveries__title">
-        <p>Waking Reveries: The hypnagogic state </p>
+        <p>{{$about.waking_reveries.title}}</p>
       </div>
       <div class="aboutPage__walkingReveries__tagline">
-        <p>The state between wakefulness and sleep.</p>
+        <p>{{$about.waking_reveries.tagline}}</p>
       </div>
       <div class="aboutPage__walkingReveries__description">
-        <p>The hypnagogic state is thought to be a door to the unconscious.
-          Salvador Dali frequently derived inspiration between sleeping and
-          waking and considered it a secret of magic craftsmanship.
-          He referred to it as “the slumber with the key.”</p>
-        <p>The word is derived from the Greek words “sleep” and “guide.”  
-          Often in Theta and Alpha brainwave frequencies you will see
-          flying colors and visual imagery pulled from layers of memories
-          and sensations. It is a free-flowing, associative state
-          and scientifically is still in uncharted territory.</p>
+        {{$about.waking_reveries.description | markdownify}}
       </div>
       <div class="aboutPage__walkingReveries__quote">
         <p class="aboutPage__walkingReveries__quote__text">
-          “Hypnagogia is the shortest path for communication from our subconscious.”
+          {{$about.waking_reveries.quote}}
         </p>
         <div class="aboutPage__walkingReveries__quote__author">
-          <span>Shirley Marques-Bonham</span>
+          <span>{{$about.waking_reveries.author}}</span>
         </div>
       </div>
     </div>
     <div class="aboutPage__walkingReveries__column">
       <div class="aboutPage__walkingReveries__picture">
-        <img src="/images-theme/walkingReveries__picture.jpg" alt="">
+        <img src="{{$about.waking_reveries.picture}}" alt="">
       </div>
     </div>
   </div>
 </div>
 <div class="container container--contentWithPadding aboutPage__banauralBeats">
   <div class="aboutPage__banauralBeats__title">
-    <p>Sound & Binaural Beats</p>
+    <p>{{$about.sound_and_binaural_beats.title}}</p>
   </div>
   <div class="aboutPage__banauralBeats__description">
-    <p>Ancient tribal shamans have used drum and rattles to beat frequencies
-      alongside a flickering fire as a primary doorway to enter altered states
-      of consciousness. Drumbeats have been studied and noted to produce Alpha and Theta frequencies.</p>
-    <p>Sound as complementary stimuli has been shown to help users transition
-      into meditative and hypnagogic states.</p>
-    <p>Pink and white noise stimulus promotes entry into the Theta State.</p>
+    <p>{{$about.sound_and_binaural_beats.description | markdownify}}</p>
   </div>
   <div class="aboutPage__banauralBeats__items">
     <div class="aboutPage__banauralBeats__item">
       <div class="aboutPage__banauralBeats__item__title">
-        <p>Trance</p>
+        <p>{{$about.sound_and_binaural_beats.trance.title}}</p>
       </div>
       <div class="aboutPage__banauralBeats__item__description">
-        <p>Anecdotal reports suggest that trancelike music or hypnotic jazz can
-          amplify the entrainment effects of flickering light. Music has been known
-          to have hypnotic properties and we suggest listening to The Master Musicians of Jajouka </p>
+        <p>{{$about.sound_and_binaural_beats.trance.description | markdownify}}</p>
       </div>
       <div class="aboutPage__banauralBeats__item__icon aboutPage__banauralBeats__item__icon--paddingTop">
         <img src="/images-theme/beats_water_icon.svg" alt="">
       </div>
       <div class="aboutPage__banauralBeats__item__title">
-        <p>Water</p>
+        <p>{{$about.sound_and_binaural_beats.water.title}}</p>
       </div>
       <div class="aboutPage__banauralBeats__item__description">
-        <p>The sounds of ocean waves crashing, the rush of a mountain stream,
-          the babbling of brooks and rain have been connected to feelings of
-          stress reduction and relaxation. </p>
+        <p>{{$about.sound_and_binaural_beats.water.description | markdownify}}</p>
       </div>
     </div>
     <div class="aboutPage__banauralBeats__item">
@@ -179,16 +122,10 @@
         <img src="/images-theme/beats_icon.svg" alt="">
       </div>
       <div class="aboutPage__banauralBeats__item__title">
-        <p>Binaural Beats</p>
+        <p>{{$about.sound_and_binaural_beats.binaural_beats.title}}</p>
       </div>
       <div class="aboutPage__banauralBeats__item__description">
-        <p>Binaural beats are an auditory illusion created by having two separate
-          sounds with different frequencies produce a third sound.</p>
-        <p>The third sound or beat  has been of interest to many studying brain
-           entrainment for the purposes of increased relaxation and focus. Binaural
-           beats may be a powerful way to alter your brainwaves and induce desired states of consciousness.</p>
-        <p>Studies have shown that research participants’ meditation EEG patterns
-          are comparable with listening to binaural beats in the Alpha and Theta bands.</p>
+        <p>{{$about.sound_and_binaural_beats.binaural_beats.description | markdownify}}</p>
       </div>
     </div>
   </div>
@@ -197,39 +134,23 @@
   <div class="container--fluid aboutPage__brainEntrainment__additionalContainer">
     <div class="container container--contentWithPadding">
       <div class="aboutPage__brainEntrainment__title">
-        <p>Brain Entrainment</p>
+        <p>{{$about.brain_entrainment.title}}</p>
       </div>
       <div class="aboutPage__brainEntrainment__description">
         <div class="aboutPage__brainEntrainment__column">
           <div class="aboutPage__brainEntrainment__description__title">
-            <p>How Flickering Light Works</p>
+            <p>{{$about.brain_entrainment.left_column.title}}</p>
           </div>
           <div class="aboutPage__brainEntrainment__description__text">
-            <p>Flickering light alters our brain’s natural electrical frequencies
-              and our brainwaves begin to mimic the chosen frequency. Sound in
-              certain frequencies can also entrain the brain to mimic the desired state of consciousness.</p>
-            <p>This is called brain entrainment. The entrainment principal is the
-              tendency for any two oscillating bodies to synchronize.  When our
-              closed eyes receive 10 flickers per second, the optic nerve triggers
-              signals in the brain’s cortical region to induce alpha waves at 10Hz.</p>
-            <p>In a similar way as flickering light, sound and music can also
-              stimulate our brains to mimic specific frequencies and become aligned to beats.  
-              This phenomenon can be used to induce focus, sleep, meditation, hypnagogic and trance-like states.</p>
+            <p>{{$about.brain_entrainment.left_column.description | markdownify}}</p>
           </div>
         </div>
         <div class="aboutPage__brainEntrainment__column">
           <div class="aboutPage__brainEntrainment__description__title">
-            <p>Entrainment</p>
+            <p>{{$about.brain_entrainment.right_column.title}}</p>
           </div>
           <div class="aboutPage__brainEntrainment__description__text">
-            <p>In 1666, the physicist Christian Huygens coined the term ‘entrainment’,  
-              after a period of time observing two pendulum clocks. The pendulums
-              that originally moved in different directions began to maintain the
-              same rhythm the pendulums stabilized.</p>
-            <p>Research has determined that subtle amounts of energy are transferred
-              between the two pendulums when they are out of sync. This produces a
-              negative feedback. To reduce the amount of energy transferred,
-              a stable relationship is formed and the pendulums then swing in synchronicity.</p>
+            <p>{{$about.brain_entrainment.right_column.description | markdownify}}</p>
           </div>
         </div>
       </div>
