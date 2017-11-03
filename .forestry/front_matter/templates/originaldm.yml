@@ -1,0 +1,46 @@
+---
+hide_body: true
+fields:
+- type: text
+  label: Title
+  name: title
+- type: text
+  label: slug
+  name: slug
+  config:
+    required: true
+  hidden: false
+- type: text
+  label: type
+  name: type
+  config:
+    required: true
+  hidden: true
+  default: originaldm
+- type: text
+  name: type
+  label: type
+  default: originaldm
+  hidden: true
+  config:
+    required: true
+- type: text
+  name: header_title
+  label: Header title
+  config:
+    required: true
+- type: textarea
+  label: Header description
+  name: header_description
+  config:
+    required: true
+    wysiwyg: true
+- type: text
+  name: content_title
+  label: Content title
+- type: textarea
+  config:
+    wysiwyg: true
+    required: true
+  label: Content
+  name: content
