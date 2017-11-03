@@ -24,3 +24,9 @@ fields:
   name: large_image
   label: Large image
   description: 1724x535px
+- type: textarea
+  config:
+    wysiwyg: true
+    required: true
+  label: Short description
+  name: short_description
