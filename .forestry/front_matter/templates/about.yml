@@ -46,3 +46,17 @@ fields:
   - type: file
     name: photo
     label: Photo
+- type: field_group
+  name: alpha_waves
+  label: Alpha Waves
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: textarea
+    config:
+      wysiwyg: true
+    label: Description
+    name: description
