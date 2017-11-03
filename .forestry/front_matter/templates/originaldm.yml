@@ -44,5 +44,5 @@ fields:
   config:
     wysiwyg: true
     required: true
-  label: Content
-  name: content
+  label: Content left column
+  name: content_left_column
