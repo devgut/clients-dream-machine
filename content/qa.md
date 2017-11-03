@@ -1,6 +1,9 @@
 +++
+guide_title = "Mindfulness & Dreamachine Guide"
+header_title = "Q&A"
 layout = "qa"
 slug = "qa"
+tips_title = "Tips"
 title = "Q&A"
 type = "qa"
 [menu.main]
