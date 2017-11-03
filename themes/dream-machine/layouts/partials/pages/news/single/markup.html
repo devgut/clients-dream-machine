@@ -1,50 +1,13 @@
 <div class="container--fluid newsHeader">
   <div class="newsHeader__singleHead">
     <div class="newsHeader__singleHead__featuredImage">
-      <img src="/images-theme/post-large.jpg" alt="">
+      <img src="{{.Params.large_image}}" alt="{{.Params.post_title}}">
       <div class="newsHeader__singleHead__caption">
-        <h1>Quo noster essent inciderint ea, at discere molestie usu</h1>
+        <h1>{{.Params.post_title}}</h1>
       </div>
     </div>
   </div>
 </div>
 <div class="articleContent wysiwyg">
-  <h1>H1 Lorem ipsum dolor sit amet, in vix malis fierent corrumpit</h1>
-  <h2>H2 Lorem ipsum dolor sit amet, in vix malis fierent corrumpit</h2>
-  <h3>H3 Lorem ipsum dolor sit amet, in vix malis fierent corrumpit</h3>
-  <h4>H4 Lorem ipsum dolor sit amet, in vix malis fierent corrumpit</h4>
-  <h5>H5 Lorem ipsum dolor sit amet, in vix malis fierent corrumpit</h5>
-  <h6>H6 Lorem ipsum dolor sit amet, in vix malis fierent corrumpit</h6>
-  <p>Lorem ipsum dolor sit amet, in vix malis fierent corrumpit, at nec quodsi concludaturque.
-    In per viderer signiferumque. Ex graeco democritum duo, ad mea enim noster accusamus.
-    Ne sed eros veri. Illud sententiae scribentur mei an. Ei pro discere nonumes consectetuer.
-    Dicam soluta scaevola ius at.</p>
-  <ul>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
-  </ul>
-  <ol>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
-  </ol>
-  <p>
-  <strong>Lorem ipsum dolor sit amet, in vix malis fierent corrumpit</strong>
-  <em>In per viderer signiferumque. Ex graeco democritum duo, ad mea enim noster accusamus.</em>
-  <a href="">Dicam soluta scaevola ius at.</a>
-  </p>
-  <blockquote cite="http://">
-    Lorem ipsum dolor sit amet, in vix malis fierent corrumpit, at nec quodsi concludaturque.
-      In per viderer signiferumque. Ex graeco democritum duo, ad mea enim noster accusamus.
-      Ne sed eros veri. Illud sententiae scribentur mei an. Ei pro discere nonumes consectetuer.
-      Dicam soluta scaevola ius at.
-  </blockquote>
-  <p>Lorem ipsum dolor sit amet, in vix malis fierent corrumpit, at nec quodsi concludaturque.
-    In per viderer signiferumque. Ex graeco democritum duo, ad mea enim noster accusamus.
-    Ne sed eros veri. Illud sententiae scribentur mei an. Ei pro discere nonumes consectetuer.
-    Dicam soluta scaevola ius at.</p>
+  {{ with .Page.Content }}{{ . | markdownify }}{{end}}
 </div>
