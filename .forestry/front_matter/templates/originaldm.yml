@@ -1,4 +1,6 @@
 ---
+pages:
+- originaldm.md
 hide_body: true
 fields:
 - type: text
