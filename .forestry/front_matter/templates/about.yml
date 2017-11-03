@@ -60,8 +60,13 @@ fields:
   - type: textarea
     config:
       wysiwyg: true
-    label: Description
-    name: description
+    label: Description left column
+    name: description_left_column
+  - type: textarea
+    name: description_left_column
+    label: Description left column
+    config:
+      wysiwyg: true
 - type: field_group_list
   name: tips_left_column
   label: Tips left column
