@@ -1,10 +1,11 @@
+{{$qa := .Params}}
 <div class="container--fluid qaPage__head">
   <div class="qaPage__header">
     <div class="qaPage__header__featuredImage">
       <img src="/images-theme/qa-header-banner.jpg" alt="">
       <div class="qaPage__header__caption">
         <div class="qaPage__header__caption__title">
-          <h1>{{ .Params.title }}</h1>
+          <h1>{{$qa.header_title}}</h1>
         </div>
       </div>
     </div>
@@ -13,228 +14,53 @@
 <div class="container container--contentWithPadding">
   <div class="qaPage__tabs">
     <div class="qaPage__tabs__column">
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>How does the dream machine work?</p>
+      {{range $qa.qa_left_column}}
+        <div class="qaPage__tab">
+          <div class="qaPage__tab__title">
+            <p>{{.title}}</p>
+          </div>
+          <div class="qaPage__tab__content">
+            <p>{{.description}}</p>
+          </div>
         </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>What are the stages of consciousness?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab active">
-        <div class="qaPage__tab__title">
-          <p>What is the hypnagogic state?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>How is mindfulness meditation similar to the Dreamachine?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>What are the different type of brain waves?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>What does a mind machine do?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>Why App uses Blue?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
+      {{end}}
     </div>
     <div class="qaPage__tabs__column">
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>Who has used the dreamachine or alpha and hypnagogic states?</p>
+      {{range $qa.qa_right_column}}
+        <div class="qaPage__tab">
+          <div class="qaPage__tab__title">
+            <p>{{.title}}</p>
+          </div>
+          <div class="qaPage__tab__content">
+            <p>{{.description}}</p>
+          </div>
         </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>What is mindfulness meditation?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>What are brain waves? </p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>Can I practice mindfulness in combination with the Dreamachine?  </p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>How does meditation change brainwaves?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
-      <div class="qaPage__tab">
-        <div class="qaPage__tab__title">
-          <p>Could the Dreamachine promote neural plasticity?</p>
-        </div>
-        <div class="qaPage__tab__content">
-          <p>The hypnagogic state and is defined as the place the mind travels
-            between sleeping and ordinary consciousness.Some artists believe that
-            the dreamachine helps to rearrange patterns of the unconscious mind and
-            bring the practitioner to a place between memory and pure consciousness.</p>
-          <p>This region of consciousness has been referred to in the writings
-            from Aristotle to Edgar Allan Poe.</p>
-        </div>
-      </div>
+      {{end}}
     </div>
   </div>
 </div>
 <div class="container container--contentWithPadding qaPage__guideAndTips">
   <div class="qaPage__guideAndTips__column">
     <div class="qaPage__guideAndTips__title">
-      <p>Mindfulness & Dreamachine Guide</p>
+      <p>{{$qa.guide_title}}</p>
     </div>
     <div class="qaPage__guideAndTips__list">
       <ol>
-        <li>Darken the room, engage the Dreamachine and close your eyes. </li>
-        <li>Watch your field of vision.</li>
-        <li>Focus attention on the mind’s  eye, otherwise known as the third eye chakra.</li>
-        <li>Observe the color and light patterns.</li>
-        <li>Observe the visual patterns in relationship to sound, breath, thought, and bodily sensations.</li>
-        <li>Watch the geometric shapes as if you were watching a movie.</li>
-        <li>Do not attach yourself to any particular shape.</li>
-        <li>Watch the shapes as you would watch a flame, shadows from trembling
-          leaves, or scintillations bouncing from the face of waves.</li>
-        <li>Find flexibility with your attention. Flickering patterns are manifestations
-          of the mind. Where is your breath? Where are your thoughts?</li>
-        <li>Know that perceptions, thoughts, and emotions are just created by
-          the mind and are filtered through perception.</li>
-        <li>Perceptions are the patterns of our brains like the patterns of the recurring shapes.</li>
-        <li>Identify the smallest point within your vision. Dwell there.</li>
-        <li>Surrender to the flow.</li>
-        <li>Where attention is focused, the emotions will dwell.</li>
-        <li>After 20 minutes, return to the breathing and disengage the machine.</li>
-        <li>Sit quietly for five minutes; follow your breathing, thoughts, emotions, and mind flickers.</li>
+        {{range qa.guide}}
+          <li>{{.item}}</li>
+        {{end}}
       </ol>
     </div>
   </div>
   <div class="qaPage__guideAndTips__column">
     <div class="qaPage__guideAndTips__title">
-      <p>Tips</p>
+      <p>{{$qa.tips_title}}</p>
     </div>
     <div class="qaPage__guideAndTips__list">
       <ul>
-        <li>Enhance the flicker effect by using Google Cardboard or a flickering flashlight.</li>
-        <li>Enhance your experience with sound, beats for music</li>
-        <li>Start w/ 6Hz for hypnagogic imagery</li>
-        <li>Try the Earth's vibration with binaural beats set at 7.83 Hz, i.e. the Schumann resonance.</li>
-        <li>Everyone has a unique Alpha sweet spot. When you find your sweet spot,
-          you’ll notice that the visions and the clarity of the shapes behind your
-          eyes will be sharper and the colors will be vibrant. we are all unique,
-          so using flickering light and finding your sweet spot is a discovery process.</li>
-        <li>Experiment w/ different combinations of light and sound frequencies.</li>
-        <li>Begin with 10 Hz for enhancing Alpha brain wave activity asnd boosting creativity.</li>
-        <li>Darken the room, engage the Dreamachine and close your eyes</li>
+        {{range qa.tips}}
+          <li>{{.item}}</li>
+        {{end}}
       </ul>
     </div>
   </div>
