@@ -1,4 +1,6 @@
 ---
+pages:
+- news/new-post.md
 hide_body: false
 fields:
 - type: text
