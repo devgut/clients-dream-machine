@@ -1,0 +1,23 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: header_title
+  label: Header title
+  config:
+    required: true
+- type: text
+  name: slug
+  label: Slug
+  config:
+    required: true
+- type: text
+  name: type
+  label: type
+  config:
+    required: true
+  hidden: true
+  default: news
