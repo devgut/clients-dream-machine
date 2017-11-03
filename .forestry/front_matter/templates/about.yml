@@ -63,8 +63,8 @@ fields:
     label: Description left column
     name: description_left_column
   - type: textarea
-    name: description_left_column
-    label: Description left column
+    name: description_right_column
+    label: Description right column
     config:
       wysiwyg: true
 - type: field_group_list
