@@ -24,3 +24,25 @@ fields:
   label: type
   name: type
   default: about
+- type: field_group
+  name: qouto
+  label: Discover a source of creativity
+  fields:
+  - type: textarea
+    label: Description
+    name: description
+    config:
+      required: true
+  - type: text
+    name: author
+    label: Author
+    config:
+      required: true
+  - type: textarea
+    name: quote
+    label: Quote
+    config:
+      required: true
+  - type: file
+    name: photo
+    label: Photo
