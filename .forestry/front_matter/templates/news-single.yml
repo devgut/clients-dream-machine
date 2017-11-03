@@ -5,8 +5,8 @@ fields:
   name: title
   label: Title
 - type: text
-  name: header_title
-  label: Header title
+  name: post_title
+  label: Post title
   config:
     required: true
 - type: text
