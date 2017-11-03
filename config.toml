@@ -4,6 +4,7 @@ languageCode = "en-us"
 theme = "dream-machine"
 title = "DreamMachine"
 [[menu.main]]
+weight = 1
 [params.app_store]
 link = "https://itunes.apple.com/us/app/dreamachine-the-key-to-creativity/id1229373775?ls=1&mt=8"
 [params.subscription]

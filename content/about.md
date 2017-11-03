@@ -17,6 +17,9 @@ title = "How Flickering Light Works"
 [brain_entrainment.right_column]
 description = "In 1666, the physicist Christian Huygens coined the term ‘entrainment’, &nbsp; after a period of time observing two pendulum clocks. The pendulums that originally moved in different directions began to maintain the same rhythm the pendulums stabilized.<br><br>Research has determined that subtle amounts of energy are transferred between the two pendulums when they are out of sync. This produces a negative feedback. To reduce the amount of energy transferred, a stable relationship is formed and the pendulums then swing in synchronicity."
 title = "Entrainment"
+[menu.main]
+name = "about"
+weight = 1
 [qouto]
 author = "ALLEN GINSBERG"
 description = "Discover a source of creativity sparked inspirations from artists and scientists from William S. Burroughs, David Bowie, Paul McCartney, Kurt Cobain, & Jan Purkinje."

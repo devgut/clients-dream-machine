@@ -10,6 +10,6 @@ title = "Enhance your creativity by using the Dreamachine"
 type = "originaldm"
 [menu.main]
 name = "ORIGINAL DREAMACHINE"
-weight = 4
+weight = 5
 
 +++
