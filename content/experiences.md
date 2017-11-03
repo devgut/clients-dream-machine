@@ -5,7 +5,7 @@ title = "Experiences"
 type = "experiences"
 [menu.main]
 name = "EXPIRIENCES"
-weight = 3
+weight = 4
 [[left_column]]
 author = "BRYON GYSIN"
 image = "/uploads/2017/11/02/bryon-gysin.jpg"

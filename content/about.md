@@ -19,7 +19,7 @@ description = "In 1666, the physicist Christian Huygens coined the term ‘entra
 title = "Entrainment"
 [menu.main]
 name = "about"
-weight = 1
+weight = 2
 [qouto]
 author = "ALLEN GINSBERG"
 description = "Discover a source of creativity sparked inspirations from artists and scientists from William S. Burroughs, David Bowie, Paul McCartney, Kurt Cobain, & Jan Purkinje."
