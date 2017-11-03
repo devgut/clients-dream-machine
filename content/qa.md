@@ -1,7 +1,6 @@
 +++
 layout = "qa"
 slug = "qa"
-tips = []
 title = "Q&A"
 type = "qa"
 [menu.main]
@@ -77,5 +76,21 @@ title = "How does meditation change brainwaves?"
 [[qa_right_column]]
 description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
 title = "Could the Dreamachine promote neural plasticity?"
+[[tips]]
+item = "Enhance the flicker effect by using Google Cardboard or a flickering flashlight."
+[[tips]]
+item = "Enhance your experience with sound, beats for music"
+[[tips]]
+item = "Start w/ 6Hz for hypnagogic imagery"
+[[tips]]
+item = "Try the Earth's vibration with binaural beats set at 7.83 Hz, i.e. the Schumann resonance."
+[[tips]]
+item = "Everyone has a unique Alpha sweet spot. When you find your sweet spot, you’ll notice that the visions and the clarity of the shapes behind your eyes will be sharper and the colors will be vibrant. we are all unique, so using flickering light and finding your sweet spot is a discovery process."
+[[tips]]
+item = "Experiment w/ different combinations of light and sound frequencies."
+[[tips]]
+item = "Begin with 10 Hz for enhancing Alpha brain wave activity asnd boosting creativity."
+[[tips]]
+item = "Darken the room, engage the Dreamachine and close your eyes"
 
 +++
