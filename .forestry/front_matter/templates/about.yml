@@ -97,3 +97,82 @@ fields:
   - type: file
     name: picture
     label: Picture
+- type: field_group
+  name: sound_and_binaural_beats
+  label: Sound & Binaural Beats
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: description
+    label: Description
+    config:
+      wysiwyg: true
+  - type: field_group
+    name: trance
+    label: Trance
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: textarea
+      name: description
+      label: Description
+  - type: field_group
+    label: Water
+    name: water
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: textarea
+      label: Description
+      name: description
+  - type: field_group
+    label: Binaural Beats
+    name: binaural_beats
+    fields:
+    - type: text
+      label: Title
+      name: title
+    - type: textarea
+      config:
+        wysiwyg: true
+      label: Description
+      name: description
+- type: field_group
+  name: brain_entrainment
+  label: Brain Entrainment
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: field_group
+    name: left_column
+    label: LEFT COLUMN
+    fields:
+    - type: text
+      name: title
+      label: Title
+      config:
+        required: true
+    - type: textarea
+      config:
+        wysiwyg: true
+      label: Description
+      name: description
+  - type: field_group
+    name: right_column
+    label: RIGHT COLUMN
+    fields:
+    - type: text
+      name: title
+      label: Title
+    - type: textarea
+      config:
+        wysiwyg: true
+      label: Description
+      name: description
