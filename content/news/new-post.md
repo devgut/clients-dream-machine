@@ -1,4 +1,3 @@
 +++
-title = "NEWS"
-
+title = "NEWS post"
 +++

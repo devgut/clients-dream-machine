@@ -46,7 +46,7 @@
     </div>
     <div class="qaPage__guideAndTips__list">
       <ol>
-        {{range qa.guide}}
+        {{range $qa.guide}}
           <li>{{.item}}</li>
         {{end}}
       </ol>
@@ -58,7 +58,7 @@
     </div>
     <div class="qaPage__guideAndTips__list">
       <ul>
-        {{range qa.tips}}
+        {{range $qa.tips}}
           <li>{{.item}}</li>
         {{end}}
       </ul>
