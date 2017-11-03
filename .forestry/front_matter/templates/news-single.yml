@@ -35,3 +35,8 @@ fields:
     required: true
   label: Short description
   name: short_description
+- type: datetime
+  name: date
+  label: date
+  config:
+    required: true
