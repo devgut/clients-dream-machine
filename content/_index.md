@@ -97,6 +97,6 @@ tips:
 menu:
   main:
     name: HOME
-    weight: 2
+    weight: 1
 
 ---

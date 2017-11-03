@@ -11,6 +11,6 @@ title = "The Original Dreamachine"
 type = "originaldm"
 [menu.main]
 name = "ORIGINAL DREAMACHINE"
-weight = 6
+weight = 5
 
 +++
