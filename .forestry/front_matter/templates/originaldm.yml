@@ -1,7 +1,7 @@
 ---
 pages:
 - originaldm.md
-hide_body: true
+hide_body: false
 fields:
 - type: text
   label: Title
