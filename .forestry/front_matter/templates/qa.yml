@@ -1,0 +1,53 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: slug
+  label: Slug
+- type: field_group
+  label: QA left column
+  name: qa_left_column
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: textarea
+    config:
+      required: true
+      wysiwyg: true
+    label: Desciption
+    name: desciption
+- type: field_group
+  label: QA right column
+  name: qa_right_column
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: textarea
+    config:
+      wysiwyg: true
+      required: true
+    label: Description
+    name: description
+- type: text
+  hidden: true
+  config:
+    required: true
+  label: type
+  name: type
+  default: qa
+- type: text
+  hidden: true
+  config:
+    required: true
+  label: layout
+  name: layout
+  default: qa
