@@ -60,3 +60,40 @@ fields:
       wysiwyg: true
     label: Description
     name: description
+- type: field_group_list
+  name: tips_left_column
+  label: Tips left column
+- type: field_group_list
+  name: tips_right_column
+  label: Tips right column
+- type: field_group
+  name: waking_reveries
+  label: Waking Reveries
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: text
+    name: tagline
+    label: Tagline
+    config:
+      required: true
+  - type: textarea
+    name: description
+    label: Description
+    config:
+      required: true
+      wysiwyg: true
+  - type: textarea
+    label: Quote
+    name: quote
+  - type: text
+    name: author
+    label: Author
+    config:
+      required: true
+  - type: file
+    name: picture
+    label: Picture
