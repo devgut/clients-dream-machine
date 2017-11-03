@@ -1,4 +1,6 @@
 ---
+pages:
+- qa.md
 hide_body: true
 fields:
 - type: text
