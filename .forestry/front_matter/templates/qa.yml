@@ -9,6 +9,9 @@ fields:
 - type: text
   name: slug
   label: Slug
+- type: text
+  name: header_title
+  label: Header title
 - type: field_group_list
   name: qa_left_column
   label: QA LEFT COLUMN
@@ -37,6 +40,9 @@ fields:
     label: Description
     config:
       wysiwyg: true
+- type: text
+  label: Guide title
+  name: guide_title
 - type: field_group_list
   name: guide
   label: Guide
@@ -47,6 +53,9 @@ fields:
     config:
       wysiwyg: false
       required: true
+- type: text
+  name: tips_title
+  label: Tips title
 - type: field_group_list
   name: tips
   label: Tips
