@@ -32,17 +32,17 @@ fields:
     label: Description
     name: description
     config:
-      required: true
+      required: false
   - type: text
     name: author
     label: Author
     config:
-      required: true
+      required: false
   - type: textarea
     name: quote
     label: Quote
     config:
-      required: true
+      required: false
   - type: file
     name: photo
     label: Photo
@@ -54,7 +54,7 @@ fields:
     name: title
     label: Title
     config:
-      required: true
+      required: false
   - type: textarea
     config:
       wysiwyg: true
@@ -63,9 +63,17 @@ fields:
 - type: field_group_list
   name: tips_left_column
   label: Tips left column
+  fields:
+  - type: text
+    name: item
+    label: Item
 - type: field_group_list
   name: tips_right_column
   label: Tips right column
+  fields:
+  - type: text
+    name: item
+    label: Item
 - type: field_group
   name: waking_reveries
   label: Waking Reveries
