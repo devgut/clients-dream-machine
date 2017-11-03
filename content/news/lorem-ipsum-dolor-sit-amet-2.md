@@ -1,5 +1,5 @@
 +++
-date = "2017-11-03T23:40:39+00:00"
+date = "2017-11-03T01:40:39+02:00"
 large_image = "/uploads/2017/11/03/post-large-1.jpg"
 post_title = "Lorem ipsum dolor sit amet 2"
 preview_image = "/uploads/2017/11/03/post3.jpg"
