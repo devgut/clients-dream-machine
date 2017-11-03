@@ -46,3 +46,9 @@ fields:
     required: true
   label: Content left column
   name: content_left_column
+- type: textarea
+  config:
+    required: true
+    wysiwyg: true
+  label: Content right column
+  name: content_right_column
