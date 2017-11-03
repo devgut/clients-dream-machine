@@ -7,24 +7,9 @@ fields:
 - type: text
   name: slug
   label: Slug
-- type: field_group
-  label: QA left column
+- type: field_group_list
   name: qa_left_column
-  fields:
-  - type: text
-    name: title
-    label: Title
-    config:
-      required: true
-  - type: textarea
-    config:
-      required: true
-      wysiwyg: true
-    label: Desciption
-    name: desciption
-- type: field_group
-  label: QA right column
-  name: qa_right_column
+  label: QA LEFT COLUMN
   fields:
   - type: text
     name: title
@@ -34,25 +19,41 @@ fields:
   - type: textarea
     config:
       wysiwyg: true
-      required: true
     label: Description
     name: description
-- type: field_group
+- type: field_group_list
+  name: qa_right_column
+  label: QA RIGHT COLUMN
+  fields:
+  - type: text
+    name: title
+    label: Title
+    config:
+      required: true
+  - type: textarea
+    name: description
+    label: Description
+    config:
+      wysiwyg: true
+- type: field_group_list
   name: guide
   label: Guide
   fields:
   - type: textarea
     name: item
     label: Item
-- type: field_group
-  label: Tips
-  name: tips
-  fields:
-  - type: textarea
     config:
       wysiwyg: false
-    label: Item
+      required: true
+- type: field_group_list
+  name: tips
+  label: Tips
+  fields:
+  - type: textarea
     name: item
+    label: Item
+    config:
+      required: true
 - type: text
   hidden: true
   config:
