@@ -37,6 +37,22 @@ fields:
       required: true
     label: Description
     name: description
+- type: field_group
+  name: guide
+  label: Guide
+  fields:
+  - type: textarea
+    name: item
+    label: Item
+- type: field_group
+  label: Tips
+  name: tips
+  fields:
+  - type: textarea
+    config:
+      wysiwyg: false
+    label: Item
+    name: item
 - type: text
   hidden: true
   config:
