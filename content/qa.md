@@ -1,7 +1,6 @@
 +++
 guide = []
 layout = "qa"
-qa_right_column = []
 slug = "qa"
 tips = []
 title = "Q&A"
@@ -29,5 +28,23 @@ title = "What does a mind machine do?"
 [[qa_left_column]]
 description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
 title = "Why App uses Blue?"
+[[qa_right_column]]
+description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
+title = "Who has used the dreamachine or alpha and hypnagogic states?"
+[[qa_right_column]]
+description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
+title = "What is mindfulness meditation?"
+[[qa_right_column]]
+description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
+title = "What are brain waves?"
+[[qa_right_column]]
+description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
+title = "Can I practice mindfulness in combination with the Dreamachine?"
+[[qa_right_column]]
+description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
+title = "How does meditation change brainwaves?"
+[[qa_right_column]]
+description = "The hypnagogic state and is defined as the place the mind travels between sleeping and ordinary consciousness.Some artists believe that the dreamachine helps to rearrange patterns of the unconscious mind and bring the practitioner to a place between memory and pure consciousness.<br><br>This region of consciousness has been referred to in the writings from Aristotle to Edgar Allan Poe."
+title = "Could the Dreamachine promote neural plasticity?"
 
 +++
