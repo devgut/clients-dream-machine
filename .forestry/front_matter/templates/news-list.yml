@@ -23,3 +23,6 @@ fields:
     required: true
   hidden: true
   default: news
+- type: text
+  name: read_more
+  label: Read more
