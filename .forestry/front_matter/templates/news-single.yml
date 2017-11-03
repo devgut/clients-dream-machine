@@ -10,11 +10,6 @@ fields:
   config:
     required: true
 - type: text
-  name: slug
-  label: Slug
-  config:
-    required: true
-- type: text
   name: type
   label: type
   config:
