@@ -40,7 +40,6 @@
     }
     new ScrollMagic.Scene({triggerElement: ".footer__subscribe"})
 					.setClassToggle(".footer__navigation", "animate")
-					.addIndicators()
 					.addTo(controller);
   }
   window.mainPageParallax = mainPageParallax;
