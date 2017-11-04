@@ -94,6 +94,8 @@ tips:
       light and finding your sweet spot is a discovery process
   - text: Experiment w/ different combinations of light and sound frequencie
   - text: Begin with 10 Hz for enhancing Alpha brain wave activity asnd boosting creativity
+date: 2017-11-03 01:40:39 +0200
+layout: home
 menu:
   main:
     name: HOME
