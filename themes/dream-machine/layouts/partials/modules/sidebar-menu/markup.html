@@ -15,11 +15,14 @@
           </li>
         {{ end }}
       {{ end }}
-      <li><a href="mailto:animal57co@gmail.com">Contact us</a></li>
+      <li><a href="mailto:{{.Site.Params.contact_us.email}}">Contact us</a></li>
       <li>
-        <a href=""><img src="/images-theme/bra-facebook.svg" alt="faceboock"></a>
-        <a href=""><img src="/images-theme/bra-twitter.svg" alt="twitter"></a>
-        <a href=""><img src="/images-theme/bra-instagram.svg" alt="instagram"></a>
+        <a href="{{.Site.Params.social_networks.facebook}}" target="_blank">
+          <img src="/images-theme/bra-facebook.svg" alt="faceboock"></a>
+        <a href="{{.Site.Params.social_networks.twitter}}" target="_blank">
+          <img src="/images-theme/bra-twitter.svg" alt="twitter"></a>
+        <a href="{{.Site.Params.social_networks.instagram}}" target="_blank">
+          <img src="/images-theme/bra-instagram.svg" alt="instagram"></a>
       </li>
     </ul>
   </div>
