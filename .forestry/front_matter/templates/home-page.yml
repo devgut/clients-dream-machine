@@ -171,3 +171,13 @@ fields:
   name: layout
   label: layout
   default: home
+  hidden: true
+  config:
+    required: true
+- type: text
+  name: type
+  label: type
+  config:
+    required: true
+  hidden: true
+  default: home
