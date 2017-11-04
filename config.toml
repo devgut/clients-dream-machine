@@ -20,4 +20,5 @@ twitter = "//twitter.com/dreamachine_9"
 facebook = "//www.facebook.com/mydreamachine/"
 instagram = "//www.instagram.com/dreamachine_9/"
 [params.contact_us]
+text = "Contact us"
 email = "animal57co@gmail.com"

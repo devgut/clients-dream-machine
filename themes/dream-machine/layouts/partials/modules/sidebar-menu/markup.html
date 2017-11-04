@@ -15,7 +15,9 @@
           </li>
         {{ end }}
       {{ end }}
-      <li><a href="mailto:{{.Site.Params.contact_us.email}}">Contact us</a></li>
+      <li><a href="mailto:{{.Site.Params.contact_us.email}}">
+        {{.Site.Params.contact_us.text}}
+      </a></li>
       <li>
         <a href="{{.Site.Params.social_networks.facebook}}" target="_blank">
           <img src="/images-theme/bra-facebook.svg" alt="faceboock"></a>
