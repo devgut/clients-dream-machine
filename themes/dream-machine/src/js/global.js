@@ -21,5 +21,12 @@ jQuery(document).ready(function() {
     duration: jQuery('.mainPageHeader').height(),
     offset: 300,
   }).addTo(controller).setTween(tween);
-
+  var benefitsParalax = new TimelineMax().add([
+    TweenMax.to(".benefits", 1, {backgroundPosition: "0% 200%", ease: Linear.easeNone})
+  ]);
+  var sceneBenefitsParalax = new ScrollMagic.Scene({
+    triggerElement: ".benefits",
+    duration: jQuery('.benefits').height(),
+    offset: 300,
+  }).addTo(controller).setTween(benefitsParalax);
 });
