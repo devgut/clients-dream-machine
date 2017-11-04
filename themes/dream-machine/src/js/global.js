@@ -22,11 +22,19 @@ jQuery(document).ready(function() {
     offset: 300,
   }).addTo(controller).setTween(tween);
   var benefitsParalax = new TimelineMax().add([
-    TweenMax.to(".benefits", 1, {backgroundPosition: "0% 200%", ease: Linear.easeNone})
+    TweenMax.to(".benefits", 1, {backgroundPosition: "0% 0%", ease: Linear.easeNone})
   ]);
   var sceneBenefitsParalax = new ScrollMagic.Scene({
     triggerElement: ".benefits",
     duration: jQuery('.benefits').height(),
-    offset: 300,
+    offset: jQuery('.benefits').height() / 2,
   }).addTo(controller).setTween(benefitsParalax);
+  var tipsParalax = new TimelineMax().add([
+    TweenMax.to(".tips", 1, {backgroundPosition: "0% 0%", ease: Linear.easeNone})
+  ]);
+  var sceneTipsParalax = new ScrollMagic.Scene({
+    triggerElement: ".tips",
+    duration: jQuery('.tips').height(),
+    offset: jQuery('.tips').height() / 2,
+  }).addTo(controller).setTween(tipsParalax);
 });
