@@ -87,6 +87,21 @@ fields:
     - type: file
       name: featured_image
       label: Featured image
+  - type: field_group
+    name: video_tab
+    label: Video tab
+    fields:
+    - type: text
+      name: title
+      label: TItle
+    - type: text
+      name: video_link
+      label: Video link
+      config:
+        required: true
+    - type: boolean
+      name: enable_video
+      label: Enable video
 - type: field_group
   name: benefits
   label: Benefits
