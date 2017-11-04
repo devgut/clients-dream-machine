@@ -15,3 +15,5 @@ subscribe_form_action = "https://dreamachine.us17.list-manage.com/subscribe/post
 [params.ui]
 close_menu = "CLOSE"
 show_menu = "MENU"
+[[params.social_networks]]
+link = ""
