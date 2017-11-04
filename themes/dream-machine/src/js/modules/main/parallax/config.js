@@ -39,4 +39,5 @@
       }).addTo(controller).setTween(tipsParalax);
     }
   }
+  window.mainPageParallax = mainPageParallax;
 }

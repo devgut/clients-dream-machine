@@ -1,81 +1,83 @@
 {{$howItWorks := .Params.how_it_works}}
-<div class="container container--content howItWorks {{if $howItWorks.video_tab.enable_video}}howItWorks--withVideo{{end}}">
-  <div class="howItWorks__header">
-    <p class="howItWorks__header__title">
-      {{ $howItWorks.title }}
-    </p>
-    <p class="howItWorks__header__description">
-      {{ $howItWorks.description }}
-    </p>
-  </div>
-  <div class="howItWorksTabs">
-    <div class="howItWorksTabs__tabs">
-      <div class="howItWorksTabs__tabsNavigation">
-        <ul>
-          {{if $howItWorks.video_tab.enable_video}}
-          <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item"
-            onclick="window.stopVideo()" data-tab="2">
-            <p class="howItWorksTabs__tabsNavigation__item__title">{{ $howItWorks.video_tab.title }}</p>
-          </li>
-          {{end}}
-          {{ range $key, $value := $howItWorks.tabs }}
+<div class="container container--content">
+  <div class="container container--content howItWorks {{if $howItWorks.video_tab.enable_video}}howItWorks--withVideo{{end}}">
+    <div class="howItWorks__header">
+      <p class="howItWorks__header__title">
+        {{ $howItWorks.title }}
+      </p>
+      <p class="howItWorks__header__description">
+        {{ $howItWorks.description }}
+      </p>
+    </div>
+    <div class="howItWorksTabs">
+      <div class="howItWorksTabs__tabs">
+        <div class="howItWorksTabs__tabsNavigation">
+          <ul>
+            {{if $howItWorks.video_tab.enable_video}}
             <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item"
-              onclick="window.stopVideo()" data-tab="{{ $key }}">
-              <p class="howItWorksTabs__tabsNavigation__item__title">{{ .title }}</p>
-              <span class="howItWorksTabs__tabsNavigation__item__description">
-                {{ .description | markdownify }}
-              </span>
+              onclick="window.stopVideo()" data-tab="2">
+              <p class="howItWorksTabs__tabsNavigation__item__title">{{ $howItWorks.video_tab.title }}</p>
             </li>
-          {{ end }}
-        </ul>
-      </div>
-      <div class="howItWorksTabs__tabsContent">
-        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="0">
-          <div class="howItWorksTabs__tab__icon">
-            {{partial "svg/google-cardboard-icon" }}
-          </div>
-          <div class="howItWorksTabs__tab__picture">
-            <img src="/images-theme/how-it-works-light-mode.png" alt="">
-          </div>
+            {{end}}
+            {{ range $key, $value := $howItWorks.tabs }}
+              <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item"
+                onclick="window.stopVideo()" data-tab="{{ $key }}">
+                <p class="howItWorksTabs__tabsNavigation__item__title">{{ .title }}</p>
+                <span class="howItWorksTabs__tabsNavigation__item__description">
+                  {{ .description | markdownify }}
+                </span>
+              </li>
+            {{ end }}
+          </ul>
         </div>
-        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="1">
-          <div class="howItWorksTabs__tab__icon">
-            {{partial "svg/sound-mode-icon" }}
+        <div class="howItWorksTabs__tabsContent">
+          <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="0">
+            <div class="howItWorksTabs__tab__icon">
+              {{partial "svg/google-cardboard-icon" }}
+            </div>
+            <div class="howItWorksTabs__tab__picture">
+              <img src="/images-theme/how-it-works-light-mode.png" alt="">
+            </div>
           </div>
-          <div class="howItWorksTabs__tab__picture">
-            <img src="/images-theme/how-it-works-soundmode.png" alt="">
+          <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="1">
+            <div class="howItWorksTabs__tab__icon">
+              {{partial "svg/sound-mode-icon" }}
+            </div>
+            <div class="howItWorksTabs__tab__picture">
+              <img src="/images-theme/how-it-works-soundmode.png" alt="">
+            </div>
           </div>
-        </div>
-        {{if $howItWorks.video_tab.enable_video}}
-        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="2">
-          <div class="howItWorksTabs__tab__icon">
-          </div>
-          <div class="howItWorksTabs__tab__picture howItWorksTabs__tab__picture--withVeideo">
-            <iframe src="{{$howItWorks.video_tab.video_link}}?enablejsapi=1"
-              frameborder="0" allowfullscreen id="video"></iframe>
-              <script type="text/javascript">
-              var tag = document.createElement('script');
-                tag.src = "//www.youtube.com/iframe_api";
-                var firstScriptTag = document.getElementsByTagName('script')[0];
-                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                var player = false;
-                function onYouTubeIframeAPIReady() {
-                  player = new YT.Player('video', {});
-                  console.log('video');
-                }
-                function stopVideo() {
-                  console.log('video');
-                  if (player) {
-                    // <log></log>
-                    player.pauseVideo();
-                    console.log(player);
+          {{if $howItWorks.video_tab.enable_video}}
+          <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="2">
+            <div class="howItWorksTabs__tab__icon">
+            </div>
+            <div class="howItWorksTabs__tab__picture howItWorksTabs__tab__picture--withVeideo">
+              <iframe src="{{$howItWorks.video_tab.video_link}}?enablejsapi=1"
+                frameborder="0" allowfullscreen id="video"></iframe>
+                <script type="text/javascript">
+                var tag = document.createElement('script');
+                  tag.src = "//www.youtube.com/iframe_api";
+                  var firstScriptTag = document.getElementsByTagName('script')[0];
+                  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                  var player = false;
+                  function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('video', {});
+                    console.log('video');
                   }
-                }
-                window.stopVideo = stopVideo;
-              </script>
+                  function stopVideo() {
+                    console.log('video');
+                    if (player) {
+                      // <log></log>
+                      player.pauseVideo();
+                      console.log(player);
+                    }
+                  }
+                  window.stopVideo = stopVideo;
+                </script>
+            </div>
           </div>
+          {{end}}
         </div>
-        {{end}}
       </div>
     </div>
   </div>
