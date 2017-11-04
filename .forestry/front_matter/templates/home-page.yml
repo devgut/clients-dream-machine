@@ -167,3 +167,7 @@ fields:
       label: Text
       config:
         required: true
+- type: text
+  name: layout
+  label: layout
+  default: home
