@@ -31,6 +31,10 @@ how_it_works:
     description: In addition to choosing a light frequency, you are also able to set
       your journey to binaural beats, or to your own sounds. Choose the sound frequency
       and click play.<br><br>This is best used with headphones.
+  video_tab:
+    title: Watch video
+    video_link: https://www.youtube.com/embed/4arXq4sXTLc
+    enable_video: true
 benefits:
   title: BENEFITS
   list_of_benefits:
