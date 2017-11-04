@@ -2,6 +2,11 @@
   margin-top: 360px
   background: $gray-2
   position: relative
+  &--withVideo
+    .howItWorksTabs__tabsNavigation
+      top: -20px
+    .howItWorks__header
+      top: -160px
   &__header
     max-width: 768px
     width: 100%
@@ -84,6 +89,12 @@
         bottom: 0px
         right: 0px
         max-width: 100%
+      &--withVeideo
+        box-sizing: border-box
+        padding: 20px
+        iframe
+          height: 100%
+          width: 100%
 @keyframes showTab
   0%
     opacity: 0

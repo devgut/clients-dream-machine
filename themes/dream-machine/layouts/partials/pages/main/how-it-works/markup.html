@@ -1,5 +1,5 @@
 {{$howItWorks := .Params.how_it_works}}
-<div class="container container--content howItWorks">
+<div class="container container--content howItWorks {{if $howItWorks.video_tab.enable_video}}howItWorks--withVideo{{end}}">
   <div class="howItWorks__header">
     <p class="howItWorks__header__title">
       {{ $howItWorks.title }}
@@ -12,8 +12,15 @@
     <div class="howItWorksTabs__tabs">
       <div class="howItWorksTabs__tabsNavigation">
         <ul>
+          {{if $howItWorks.video_tab.enable_video}}
+          <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item"
+            onclick="window.stopVideo()" data-tab="2">
+            <p class="howItWorksTabs__tabsNavigation__item__title">{{ $howItWorks.video_tab.title }}</p>
+          </li>
+          {{end}}
           {{ range $key, $value := $howItWorks.tabs }}
-            <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item" data-tab="{{ $key }}">
+            <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item"
+              onclick="window.stopVideo()" data-tab="{{ $key }}">
               <p class="howItWorksTabs__tabsNavigation__item__title">{{ .title }}</p>
               <span class="howItWorksTabs__tabsNavigation__item__description">
                 {{ .description | markdownify }}
@@ -39,6 +46,36 @@
             <img src="/images-theme/how-it-works-soundmode.png" alt="">
           </div>
         </div>
+        {{if $howItWorks.video_tab.enable_video}}
+        <div class="howItWorksTabs__tab howItWorksTabs__item" data-tab="2">
+          <div class="howItWorksTabs__tab__icon">
+          </div>
+          <div class="howItWorksTabs__tab__picture howItWorksTabs__tab__picture--withVeideo">
+            <iframe src="{{$howItWorks.video_tab.video_link}}?enablejsapi=1"
+              frameborder="0" allowfullscreen id="video"></iframe>
+              <script type="text/javascript">
+              var tag = document.createElement('script');
+                tag.src = "//www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                var player = false;
+                function onYouTubeIframeAPIReady() {
+                  player = new YT.Player('video', {});
+                  console.log('video');
+                }
+                function stopVideo() {
+                  console.log('video');
+                  if (player) {
+                    // <log></log>
+                    player.pauseVideo();
+                    console.log(player);
+                  }
+                }
+                window.stopVideo = stopVideo;
+              </script>
+          </div>
+        </div>
+        {{end}}
       </div>
     </div>
   </div>
