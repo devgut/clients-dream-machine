@@ -11,4 +11,15 @@ jQuery(document).ready(function() {
   window.howItWorksTabs();
   window.initSideBarMenu();
   window.initQAccordeon();
+  var controller = new ScrollMagic.Controller();
+  var tween = new TimelineMax().add([TweenMax.to(".mainPageHeader__innerShifted", 1, {
+    top: "-80px",
+    ease: Linear.easeNone
+  })]);
+  var scene = new ScrollMagic.Scene({
+    triggerElement: ".mainPageHeader",
+    duration: jQuery('.mainPageHeader').height(),
+    offset: 300,
+  }).addIndicators().addTo(controller).setTween(tween);
+
 });
