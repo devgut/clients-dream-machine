@@ -7,6 +7,12 @@
       top: -20px
     .howItWorks__header
       top: -160px
+    .howItWorksTabs__tabsNavigation
+      max-width: 450px
+    .howItWorksTabs__tab.active
+      min-height: 570px
+    .howItWorksTabs__tab__picture
+      right: 20px
   &__header
     max-width: 768px
     width: 100%
@@ -69,8 +75,9 @@
       animation-fill-mode: forwards
       display: flex
       opacity: 1
-      height: 470px
+      min-height: 470px
       flex-flow: row wrap
+
     &__icon
       width: 50%
       overflow: hidden
@@ -91,10 +98,13 @@
         max-width: 100%
       &--withVeideo
         box-sizing: border-box
-        padding: 20px 20px 40px
+        padding: 20px 0px 40px
         iframe
           height: 100%
           width: 100%
+.howItWorksTabs__item--xs.active,
+.howItWorksTabs__item--xs
+  display: none
 @keyframes showTab
   0%
     opacity: 0

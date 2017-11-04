@@ -18,6 +18,32 @@
               onclick="window.stopVideo()" data-tab="2">
               <p class="howItWorksTabs__tabsNavigation__item__title">{{ $howItWorks.video_tab.title }}</p>
             </li>
+            <div class="howItWorksTabs__tab howItWorksTabs__item howItWorksTabs__item--xs" data-tab="2">
+              <div class="howItWorksTabs__tab__picture howItWorksTabs__tab__picture--withVeideo">
+                <iframe src="{{$howItWorks.video_tab.video_link}}?enablejsapi=1"
+                  frameborder="0" allowfullscreen id="video"></iframe>
+                  <script type="text/javascript">
+                  var tag = document.createElement('script');
+                    tag.src = "//www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    var player = false;
+                    function onYouTubeIframeAPIReady() {
+                      player = new YT.Player('video', {});
+                      console.log('video');
+                    }
+                    function stopVideo() {
+                      console.log('video');
+                      if (player) {
+                        // <log></log>
+                        player.pauseVideo();
+                        console.log(player);
+                      }
+                    }
+                    window.stopVideo = stopVideo;
+                  </script>
+              </div>
+            </div>
             {{end}}
             {{ range $key, $value := $howItWorks.tabs }}
               <li class="howItWorksTabs__item howItWorksTabs__tabsNavigation__item"

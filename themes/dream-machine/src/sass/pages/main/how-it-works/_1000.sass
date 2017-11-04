@@ -7,7 +7,7 @@
   .howItWorksTabs__tabsNavigation__item__description
     +chageFontSize(18px, 22px)
   .howItWorks__header
-    top: -70px
+    top: -130px
     padding: 30px 25px
   .howItWorksTabs__tabsNavigation__item__title
     +chageFontSize(28px, 34px)
@@ -18,3 +18,42 @@
   .howItWorksTabs__tab__picture
     width: 40%
     right: -15%
+  .howItWorks--withVideo
+    .howItWorksTabs
+      padding-top: 70px
+      min-height: 760px
+    .howItWorks__header
+      top: -130px
+    .howItWorksTabs__tab__picture
+      width: 50%
+      right: -10px
+      bottom: -50px
+      iframe
+        display: none
+    .howItWorksTabs__tab.active
+      height: inherit
+      padding-top: 50px
+      min-height: 640px
+    .howItWorksTabs__item--xs.active,
+    .howItWorksTabs__tab.howItWorksTabs__item--xs.active
+      display: block
+      min-height: 150px
+      max-height: 150px
+      padding-top: 0px
+      width: 100%
+      .howItWorksTabs__tab__picture
+        width: 50%
+        right: 0px
+        bottom: 0px
+      iframe
+        width: 100%
+        display: block
+        position: relative
+        top: -20px
+      .howItWorksTabs__tab__icon
+        left: 0
+        width: 100%
+      .howItWorksTabs__tab__picture
+        width: 100%
+        right: 0
+        padding-bottom: 30px
