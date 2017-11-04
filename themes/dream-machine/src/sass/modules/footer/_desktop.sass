@@ -55,11 +55,28 @@
     padding-right: 30px
   &__navigation
     width: 50%
+    &.animate
+      ul li
+        animation: textAnimation 1000ms cubic-bezier(.32,.47,.57,.96)
+        animation-fill-mode: forwards
+      @for $i from 0 through 20
+        ul li:nth-child(#{$i})
+          $plus: 25ms*$i
+          animation-delay: 350ms+$plus
     ul
       display: flex
       flex-flow: row wrap
       justify-content: space-between
       li
+        opacity: 0
+        position: relative
         width: calc(100% / 3)
         a
-          +font($primaryFont, 18px, 34px, rgba(255, 255, 255, 0.5), normal, none, none)
+          +font($primaryFont, 18px, 34px, rgba(255, 255, 255, 0.5), normal, none, uppercase)
+@keyframes textAnimation
+  0%
+    opacity: 0
+    top: 80px
+  100%
+    opacity: .999
+    top: 0px

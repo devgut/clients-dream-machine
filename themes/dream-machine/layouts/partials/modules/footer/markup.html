@@ -9,9 +9,11 @@
     <div class="footer__navigation">
       <ul>
         {{ range .Site.Menus.main }}
-          <li>
-            <a href="{{ .URL }}" class="active">{{ .Name }}</a>
-          </li>
+          {{if .URL }}
+            <li>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
         {{ end }}
       </ul>
     </div>
