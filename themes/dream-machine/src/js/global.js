@@ -20,6 +20,6 @@ jQuery(document).ready(function() {
     triggerElement: ".mainPageHeader",
     duration: jQuery('.mainPageHeader').height(),
     offset: 300,
-  }).addIndicators().addTo(controller).setTween(tween);
+  }).addTo(controller).setTween(tween);
 
 });

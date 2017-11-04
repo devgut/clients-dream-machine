@@ -28,6 +28,8 @@
     ul li
       position: relative
       opacity: 0
+    svg path
+      +transition(300ms, linear)
     ul li a
       +font($primaryFont, 24px, 73px, $gray-6, normal, none, uppercase)
       +transition(300ms, linear)
@@ -35,6 +37,8 @@
       padding-left: 15px
       &:hover
         color: $blue-3
+        svg path
+          fill: $blue-3
       &.active
         border-left: 2px solid $blue-3
         color: $white
