@@ -8,6 +8,17 @@ fields:
   name: title
   config:
     required: true
+  default: DreamMachine | Home
+- type: text
+  name: slug
+  label: slug
+  fields:
+  - type: text
+    name: layout
+    label: layout
+  - type: text
+    name: layout
+    label: layout
 - type: field_group
   label: Page header
   name: header
