@@ -7,21 +7,27 @@
   padding: 25px 45px
   box-sizing: border-box
   max-width: 533px
-  display: none
   width: 100%
-  opacity: 0
-  animation: hideMenu 350ms linear
-  animation-fill-mode: forwards
+  right: -533px
+  +transition(300ms, cubic-bezier(.32,.47,.57,.96))
   &.active
-    display: block
-    animation: showMenu 350ms linear
-    animation-fill-mode: forwards
+    right: 0px
+    ul li
+      animation: textAnimation 1000ms cubic-bezier(.32,.47,.57,.96)
+      animation-fill-mode: forwards
+    @for $i from 0 through 20
+      ul li:nth-child(#{$i})
+        $plus: 25ms*$i
+        animation-delay: 350ms+$plus
   &__navigation
     text-align: right
     margin-bottom: 75px
   &__closeMenu
     +font($primaryFont, 27px, 31px, $white-1, normal, none, uppercase)
   &__navigation__list
+    ul li
+      position: relative
+      opacity: 0
     ul li a
       +font($primaryFont, 24px, 73px, $gray-6, normal, none, uppercase)
       +transition(300ms, linear)
@@ -46,44 +52,15 @@
   &.active
     display: block
     left: 0px
-    animation: showMenu 500ms linear
-    animation-fill-mode: forwards
-@keyframes hideOverlay
-  0%
-    left: 0px
-    opacity: 1
-  1%
-    left: -100%
-  100%
-    opacity: 0
-    left: -100%
-@keyframes showOverlay
-  0%
-    left: -100%
-    opacity: 0
-  1%
-    left: 0px
-  50%
-    opacity: 0
-    left: 0px
-  100%
-    opacity: 1
-    left: 0px
-@keyframes hideMenu
-  0%
-    right: 0px
-    opacity: 1
-  100%
-    right: -533px
-    opacity: 0
 @keyframes showMenu
   0%
     right: -533px
-  70%
-    opacity: 1
-  90%
-    right: -20
-    opacity: 1
   100%
     right: 0px
-    opacity: 1
+@keyframes textAnimation
+  0%
+    opacity: 0
+    top: 80px
+  100%
+    opacity: .999
+    top: 0px
