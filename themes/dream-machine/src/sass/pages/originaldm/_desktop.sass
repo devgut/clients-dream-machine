@@ -6,14 +6,20 @@
     &__picture
       position: absolute
       right: 0px
-      top: 0px
+      top: 40px
+      margin-top: -40px
       z-index: 1
       max-width: 1240px
-      width: 100%
+      width: calc(100% - 40px)
+      height: calc(100% + 40px)
+      img
+        height: 100%
+        width: initial
+        max-width: initial
     &__description
       position: relative
       z-index: 2
-      padding: 60px 0 100px
+      padding: 60px 0 100px 40px
       &__title
         +font($headingFont, 52px, 61px, $white, normal, none, none)
         margin-bottom: 40px
