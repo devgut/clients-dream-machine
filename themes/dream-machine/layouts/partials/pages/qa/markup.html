@@ -20,7 +20,7 @@
             <p>{{.title}}</p>
           </div>
           <div class="qaPage__tab__content">
-            <p>{{.description}}</p>
+            <p>{{.description |markdownify}}</p>
           </div>
         </div>
       {{end}}
@@ -32,7 +32,7 @@
             <p>{{.title}}</p>
           </div>
           <div class="qaPage__tab__content">
-            <p>{{.description}}</p>
+            <p>{{.description |markdownify}}</p>
           </div>
         </div>
       {{end}}
