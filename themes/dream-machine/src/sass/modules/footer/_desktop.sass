@@ -47,8 +47,9 @@
   &__container
     display: flex
     justify-content: space-between
+    flex-flow: row wrap
     padding-top: 115px
-    padding-bottom: 115px
+    padding-bottom: 90px
   &__logo,
   &__cta
     width: 25%
@@ -56,6 +57,12 @@
     text-align: right
     box-sizing: border-box
     padding-right: 30px
+  &__warning
+    width: 100%
+    +font($primaryFont, 20px, 26px, $white, normal, none, none)
+    text-align: center
+    opacity: 0.5
+    padding-top: 50px
   &__navigation
     width: 50%
     &.animate

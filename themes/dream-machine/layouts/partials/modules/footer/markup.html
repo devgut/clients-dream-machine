@@ -15,12 +15,18 @@
             </li>
           {{ end }}
         {{ end }}
+        <li><a href="mailto:{{.Site.Params.contact_us.email}}">
+          {{.Site.Params.contact_us.text}}
+        </a></li>
       </ul>
     </div>
     <div class="footer__cta">
       <a href="{{ .Site.Params.app_store.link }}" target="_blank" class="mainPageHeader__heading__appStore">
         {{partial "svg/app-store-button-sm"}}
       </a>
+    </div>
+    <div class="footer__warning">
+      <p>{{.Site.Params.warning.text}}</p>
     </div>
   </div>
 </div>

@@ -22,3 +22,5 @@ subscribe_form_action = "https://dreamachine.us17.list-manage.com/subscribe/post
 [params.ui]
 close_menu = "CLOSE"
 show_menu = "MENU"
+[params.warning]
+text = "PLEASE NOTE: THIS CAN CAUSE PHOTO EPILEPSY IN SOME PEOPLE (1/10,000)"
