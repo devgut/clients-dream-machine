@@ -7,7 +7,7 @@ tips_title = "Tips"
 title = "Q&A"
 type = "qa"
 [menu.main]
-weight = 4
+weight = 6
 [[guide]]
 item = "Darken the room, engage the Dreamachine and close your eyes."
 [[guide]]

@@ -4,9 +4,16 @@ languageCode = "en-us"
 theme = "dream-machine"
 title = "DreamMachine"
 [[menu.main]]
-weight = 1
+weight = 2
 [params.app_store]
 link = "https://itunes.apple.com/us/app/dreamachine-the-key-to-creativity/id1229373775?ls=1&mt=8"
+[params.contact_us]
+email = "animal57co@gmail.com"
+text = "Contact us"
+[params.social_networks]
+facebook = "//www.facebook.com/mydreamachine/"
+instagram = "//www.instagram.com/dreamachine_9/"
+twitter = "//twitter.com/dreamachine_9"
 [params.subscription]
 description = "Dreamachine was made with care and patience because I have found it personally helpful to stimulate creative thought and relax."
 input_placeholder = "Enter your email to subscribe to our newsletter"
@@ -15,10 +22,3 @@ subscribe_form_action = "https://dreamachine.us17.list-manage.com/subscribe/post
 [params.ui]
 close_menu = "CLOSE"
 show_menu = "MENU"
-[params.social_networks]
-twitter = "//twitter.com/dreamachine_9"
-facebook = "//www.facebook.com/mydreamachine/"
-instagram = "//www.instagram.com/dreamachine_9/"
-[params.contact_us]
-text = "Contact us"
-email = "animal57co@gmail.com"
