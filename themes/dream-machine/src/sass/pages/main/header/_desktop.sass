@@ -1,13 +1,18 @@
 .mainPageHeader
   background: $grayBackground
-  max-height: 893px
+  display: flex
+  justify-content: flex-end
   &__innerShifted
+    width: calc(100% - 40px)
     position: relative
-    right: -80px
+    max-width: 1710px
     overflow-y: hidden
     background: $grayBackground
     padding-left: 0px
     padding-right: 0px
+    top: 60px
+    margin-top: -60px
+    margin-right: 0px
   &__heading
     display: flex
     flex-flow: row wrap

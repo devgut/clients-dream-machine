@@ -1,17 +1,17 @@
 {
   function mainPageParallax() {
     let controller = new ScrollMagic.Controller();
-    if (jQuery('.mainPageHeader__innerShifted').length) {
-      let tween = new TimelineMax().add([TweenMax.to(".mainPageHeader__innerShifted", 1, {
-        top: "-80px",
-        ease: Linear.easeNone
-      })]);
-      let scene = new ScrollMagic.Scene({
-        triggerElement: ".mainPageHeader",
-        duration: jQuery('.mainPageHeader').height(),
-        offset: 300,
-      }).addTo(controller).setTween(tween);
-    }
+    // if (jQuery('.mainPageHeader__innerShifted').length) {
+    //   let tween = new TimelineMax().add([TweenMax.to(".mainPageHeader__innerShifted", 1, {
+    //     top: "-80px",
+    //     ease: Linear.easeNone
+    //   })]);
+    //   let scene = new ScrollMagic.Scene({
+    //     triggerElement: ".mainPageHeader",
+    //     duration: jQuery('.mainPageHeader').height(),
+    //     offset: 300,
+    //   }).addTo(controller).setTween(tween);
+    // }
     if (jQuery('.benefits').length) {
       let benefitsParalax = new TimelineMax().add([
         TweenMax.to(".benefits", 1, {
