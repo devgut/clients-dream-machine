@@ -130,7 +130,7 @@
   &__description
     +font($primaryFont, 22px, 26px, $white, normal, none, none)
     background: url('../images-theme/walkingReveries__icon.png') no-repeat 15px 100%
-    padding-bottom: 50px
+    padding-bottom: 70px
     margin-bottom: 20px
     p
       margin-bottom: 22px
@@ -198,6 +198,7 @@
     background: url('../images-theme/brainEntrainment__background.png') no-repeat 100% 0px
     padding-bottom: 100px
     padding-top: 80px
+    background-size: auto 120%
   &__title
     text-align: center
     +font($primaryFont, 46px, 54px, $blue-4, normal, none, none)
@@ -216,3 +217,7 @@
         margin-bottom: 22px
   &__column
     width: 50%
+    &:first-child
+      padding-right: 20px
+    &:last-child
+      padding-left: 20px

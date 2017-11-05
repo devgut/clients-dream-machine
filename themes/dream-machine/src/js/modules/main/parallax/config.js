@@ -28,7 +28,7 @@
     if (jQuery('.tips').length) {
       let tipsParalax = new TimelineMax().add([
         TweenMax.to(".tips", 1, {
-          backgroundPosition: "0% 0%",
+          backgroundPosition: "50% 0%",
           ease: Linear.easeNone
         })
       ]);
