@@ -1,30 +1,11 @@
 @media screen and (max-width: 768px)
+  .newsList
+    top: -20px
   .newsHeader__listHead
-    padding-bottom: 100px
-    padding-top: 50px
-  .newsHeader__listHead__title,
-  .newsHeader__singleHead__caption
-    +chageFontSize(30px, 40px)
-    left: 20px
-  .newsList,
-  .newsList__item:nth-child(2n)
-    top: 0
-  .newsList__item
-    width: 100%
-    margin-top: 50px
-  .newsList__item:nth-child(2n)
-    .newsList__item__shortDescription
-      right: 35px
-  .newsHeader__singleHead__featuredImage
-    height: 300px
-    img
-      margin-top: 0px
-      width: 250%
-      max-width: 250%
-  .newsHeader__singleHead,
-  .newsHeader__singleHead__caption
-    max-height: 250px
-    overflow: hidden
+    padding-bottom: 60px
+    padding-top: 20px
+  .newsHeader__listHead__title
+    padding: 15px 20px 15px 30px
   .articleContent
     padding: 0 20px
     margin: 100px 0
@@ -57,3 +38,23 @@
     blockquote
       border-left: 5px solid $white-1
       padding-left: 20px
+@media screen and (max-width: 640px)
+  .newsHeader__singleHead__featuredImage img
+    max-height: 300px
+  .newsHeader__singleHead__featuredImage
+    width: calc(100% - 20px)
+  .newsHeader__listHead__title,
+  .newsHeader__singleHead__caption
+    +chageFontSize(30px, 40px)
+    padding-top: 30px
+    padding-bottom: 30px
+    left: 20px
+  .newsList__item
+    width: 100%
+    margin-top: 50px
+  .newsList,
+  .newsList__item:nth-child(2n)
+    top: 0
+  .newsList__item:nth-child(2n)
+    .newsList__item__shortDescription
+      right: 35px

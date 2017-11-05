@@ -7,8 +7,9 @@
     padding-top: 75px
     padding-bottom: 150px
     box-sizing: border-box
+    padding-left: 40px
     &__title
-      padding: 28px 40px 28px 65px
+      padding: 28px 40px 28px 50px
       background-image: $whiteToBlue
       display: inline-block
       +font($headingFont, 52px, 61px, $white, normal, none, uppercase)
@@ -47,7 +48,6 @@
 //single page styles
 .newsHeader
   &__singleHead
-    max-height: 470px
     text-align: right
     &__caption
       position: absolute
@@ -64,8 +64,14 @@
       max-width: 1730px
       display: inline-block
       position: relative
+      width: calc(100% - 40px)
+      top: 40px
+      margin-top: -40px
       img
-        width: 100%
+        min-width: initial
+        width: initial
+        max-width: initial
+        height: 100%
         margin-bottom: -5px
 .articleContent
   max-width: 1160px
