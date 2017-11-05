@@ -19,11 +19,16 @@
         {{.Site.Params.contact_us.text}}
       </a></li>
       <li>
-        <a href="{{.Site.Params.social_networks.facebook}}" target="_blank">
+        <a href="{{ .Site.Params.app_store.link }}" target="_blank" class="mainPageHeader__heading__appStore">
+          {{partial "svg/app-store-button-sm"}}
+        </a>
+      </li>
+      <li>
+        <a href="{{.Site.Params.social_networks.facebook}}" target="_blank" class="menuSvg">
           {{partial "svg/bra-facebook" .}}</a>
-        <a href="{{.Site.Params.social_networks.twitter}}" target="_blank">
+        <a href="{{.Site.Params.social_networks.twitter}}" target="_blank" class="menuSvg">
           {{partial "svg/bra-twitter" .}}</a>
-        <a href="{{.Site.Params.social_networks.instagram}}" target="_blank">
+        <a href="{{.Site.Params.social_networks.instagram}}" target="_blank" class="menuSvg">
           {{partial "svg/bra-instagram" .}}</a>
       </li>
     </ul>
