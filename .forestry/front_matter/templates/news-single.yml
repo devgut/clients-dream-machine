@@ -1,9 +1,9 @@
 ---
 pages:
-- news/quo-noster-essent-inciderint-ea--at-discere-molestie-1.md
-- news/quo-noster-essent-inciderint-ea--at-discere-molestie-usu-2.md
-- news/lorem-ipsum-dolor-sit-amet-2.md
 - news/new-post.md
+- news/lorem-ipsum-dolor-sit-amet-2.md
+- news/quo-noster-essent-inciderint-ea--at-discere-molestie-usu-2.md
+- news/quo-noster-essent-inciderint-ea--at-discere-molestie-1.md
 hide_body: false
 fields:
 - type: text
